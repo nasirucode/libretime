@@ -23,6 +23,10 @@ class Schema implements ConfigurationInterface
             return rtrim($v, '/') . '/';
         };
 
+        $trim_leading_slash = function ($v) {
+            return ltrim($v, '/');
+        };
+
         $treeBuilder = new TreeBuilder('');
         $treeBuilder->getRootNode()
             ->children()
@@ -32,6 +36,11 @@ class Schema implements ConfigurationInterface
             /**/->scalarNode('public_url')->cannotBeEmpty()->end()
             /**/->scalarNode('api_key')->cannotBeEmpty()->end()
             /**/->arrayNode('allowed_cors_origins')->scalarPrototype()->defaultValue([])->end()->end()
+            /**/->scalarNode('timezone')->cannotBeEmpty()->defaultValue("UTC")
+            /*  */->validate()->ifNotInArray(DateTimeZone::listIdentifiers())
+            /*  */->thenInvalid('invalid general.timezone %s')
+            /*  */->end()
+            /**/->end()
             /**/->scalarNode('dev_env')->defaultValue('production')->end()
             /**/->scalarNode('auth')->defaultValue('local')->end()
             /**/->integerNode('cache_ahead_hours')->defaultValue(1)->end()
@@ -57,7 +66,7 @@ class Schema implements ConfigurationInterface
 
             // Storage schema
             ->arrayNode('storage')->addDefaultsIfNotSet()->children()
-            /**/->scalarNode('path')->defaultValue('/srv/libretime')
+            /**/->scalarNode('path')->defaultValue('/srv/libretime/')
             /*  */->validate()->ifString()->then($force_trailing_slash)->end()
             /**/->end()
             ->end()->end()
@@ -89,6 +98,116 @@ class Schema implements ConfigurationInterface
             /**/->ignoreExtraKeys()
             ->end()
 
+            // Liquidsoap schema
+            ->arrayNode('liquidsoap')
+            /**/->ignoreExtraKeys()
+            ->end()
+
+            // Stream schema
+            ->arrayNode('stream')->ignoreExtraKeys()->addDefaultsIfNotSet()->children()
+
+            // Stream inputs
+            ->arrayNode('inputs')->addDefaultsIfNotSet()->children()
+            /**/->arrayNode('main')->addDefaultsIfNotSet()->children()
+            /*  */->booleanNode('enabled')->defaultTrue()->end()
+            /*  */->enumNode('kind')->values(['harbor'])->defaultValue('harbor')->end()
+            /*  */->scalarNode('public_url')->end()
+            /*  */->scalarNode('mount')->defaultValue("main")
+            /*      */->validate()->ifString()->then($trim_leading_slash)->end()
+            /*  */->end()
+            /*  */->integerNode('port')->defaultValue(8001)->end()
+            /**/->end()->end()
+            /**/->arrayNode('show')->addDefaultsIfNotSet()->children()
+            /*  */->booleanNode('enabled')->defaultTrue()->end()
+            /*  */->enumNode('kind')->values(['harbor'])->defaultValue('harbor')->end()
+            /*  */->scalarNode('public_url')->end()
+            /*  */->scalarNode('mount')->defaultValue("show")
+            /*      */->validate()->ifString()->then($trim_leading_slash)->end()
+            /*  */->end()
+            /*  */->integerNode('port')->defaultValue(8002)->end()
+            /**/->end()->end()
+            ->end()->end()
+
+            // Stream outputs
+            ->arrayNode('outputs')->ignoreExtraKeys()->addDefaultsIfNotSet()->children()
+
+            // Icecast outputs
+            /**/->arrayNode('icecast')->arrayPrototype()->children()
+            /*  */->booleanNode('enabled')->defaultFalse()->end()
+            /*  */->enumNode('kind')->values(['icecast'])->defaultValue('icecast')->end()
+            /*  */->scalarNode('public_url')->end()
+            /*  */->scalarNode('host')->defaultValue('localhost')->end()
+            /*  */->integerNode('port')->defaultValue(8000)->end()
+            /*  */->scalarNode('mount')->cannotBeEmpty()
+            /*    */->validate()->ifString()->then($trim_leading_slash)->end()
+            /*  */->end()
+            /*  */->scalarNode('source_user')->defaultValue('source')->end()
+            /*  */->scalarNode('source_password')->cannotBeEmpty()->end()
+            /*  */->scalarNode('admin_user')->defaultValue('admin')->end()
+            /*  */->scalarNode('admin_password')->end()
+            /*  */->arrayNode('audio')->addDefaultsIfNotSet()->children()
+            /*    */->scalarNode('channels')->defaultValue('stereo')
+            /*        */->validate()->ifNotInArray(['stereo', 'mono'])
+            /*        */->thenInvalid('invalid stream.outputs.icecast.audio.channels %s')
+            /*        */->end()
+            /*    */->end()
+            /*    */->scalarNode('format')->cannotBeEmpty()
+            /*        */->validate()->ifNotInArray(['aac', 'mp3', 'ogg', 'opus'])
+            /*        */->thenInvalid('invalid stream.outputs.icecast.audio.format %s')
+            /*        */->end()
+            /*    */->end()
+            /*    */->integerNode('bitrate')->isRequired()->end()
+            /*    */->booleanNode('enable_metadata')->defaultFalse()->end()
+            /*  */->end()->end()
+            /*  */->scalarNode('name')->end()
+            /*  */->scalarNode('description')->end()
+            /*  */->scalarNode('website')->end()
+            /*  */->scalarNode('genre')->end()
+            /**/->end()->end()->end()
+
+            // Shoutcast outputs
+            /**/->arrayNode('shoutcast')->arrayPrototype()->children()
+            /*  */->booleanNode('enabled')->defaultFalse()->end()
+            /*  */->enumNode('kind')->values(['shoutcast'])->defaultValue('shoutcast')->end()
+            /*  */->scalarNode('public_url')->end()
+            /*  */->scalarNode('host')->defaultValue('localhost')->end()
+            /*  */->integerNode('port')->defaultValue(8000)->end()
+            /*  */->scalarNode('source_user')->defaultValue('source')->end()
+            /*  */->scalarNode('source_password')->cannotBeEmpty()->end()
+            /*  */->scalarNode('admin_user')->defaultValue('admin')->end()
+            /*  */->scalarNode('admin_password')->end()
+            /*  */->arrayNode('audio')->addDefaultsIfNotSet()->children()
+            /*    */->scalarNode('channels')->defaultValue('stereo')
+            /*        */->validate()->ifNotInArray(['stereo', 'mono'])
+            /*        */->thenInvalid('invalid stream.outputs.shoutcast.audio.channels %s')
+            /*        */->end()
+            /*    */->end()
+            /*    */->scalarNode('format')->cannotBeEmpty()
+            /*        */->validate()->ifNotInArray(['aac', 'mp3'])
+            /*        */->thenInvalid('invalid stream.outputs.shoutcast.audio.format %s')
+            /*        */->end()
+            /*    */->end()
+            /*    */->integerNode('bitrate')->isRequired()->end()
+            /*  */->end()->end()
+            /*  */->scalarNode('name')->end()
+            /*  */->scalarNode('website')->end()
+            /*  */->scalarNode('genre')->end()
+            /**/->end()->end()->end()
+
+            // System outputs
+            /**/->arrayNode('system')->arrayPrototype()->children()
+            /*  */->booleanNode('enabled')->defaultFalse()->end()
+            /*  */->scalarNode('kind')->defaultValue('alsa')
+            /*    */->validate()->ifNotInArray(["alsa", "ao", "oss", "portaudio", "pulseaudio"])
+            /*    */->thenInvalid('invalid stream.outputs.system.kind %s')
+            /*  */->end()->end()
+            /**/->end()->end()->end()
+
+            ->end()->end()
+
+            // END Stream schema
+            ->end()->end()
+
             // END Schema
             ->end();
 
@@ -113,7 +232,8 @@ class Config
         try {
             $values = $processor->processConfiguration($schema, [$dirty]);
         } catch (InvalidConfigurationException $error) {
-            echo "could not parse configuration: " .  $error->getMessage();
+            echo 'could not parse configuration: ' . $error->getMessage();
+
             exit;
         }
 
@@ -128,12 +248,20 @@ class Config
         // Storage path
         if (!is_dir($values['storage']['path'])) {
             echo "the configured storage.path '{$values['storage']['path']}' does not exists!";
+
             exit;
         }
         if (!is_writable($values['storage']['path'])) {
             echo "the configured storage.path '{$values['storage']['path']}' is not writable!";
+
             exit;
         }
+
+        // Merge Icecast and Shoutcast outputs
+        $values['stream']['outputs']['merged'] = array_merge(
+            $values['stream']['outputs']['icecast'],
+            $values['stream']['outputs']['shoutcast']
+        );
 
         self::$values = $values;
         self::fillLegacyValues($values);
@@ -161,13 +289,19 @@ class Config
 
     public static function get(...$args)
     {
-        if (is_null(self::$dot_values)) self::load();
+        if (is_null(self::$dot_values)) {
+            self::load();
+        }
+
         return self::$dot_values->get(...$args);
     }
 
     public static function has(...$args)
     {
-        if (is_null(self::$dot_values)) self::load();
+        if (is_null(self::$dot_values)) {
+            self::load();
+        }
+
         return self::$dot_values->has(...$args);
     }
 
@@ -228,6 +362,9 @@ class Config
         // Storage
         $legacy_values['storagePath'] = $values['storage']['path'];
 
+        // Stream
+        $legacy_values['stream'] = $values['stream'];
+
         // Facebook (DEPRECATED)
         if (isset($values['facebook']['facebook_app_id'])) {
             $legacy_values['facebook-app-id'] = $values['facebook']['facebook_app_id'];
@@ -255,12 +392,22 @@ class Config
 
     public static function setAirtimeVersion()
     {
-        $version = @file_get_contents(dirname(ROOT_PATH) . '/VERSION');
-        if (!$version) {
-            // fallback to constant from constants.php if no other info is available
-            $version = LIBRETIME_MAJOR_VERSION;
+        $version = LIBRETIME_MAJOR_VERSION;
+
+        foreach ([ROOT_PATH, dirname(ROOT_PATH)] as $path) {
+            $content = @file_get_contents($path . '/VERSION');
+            if ($content) {
+                $version = trim($content);
+
+                break;
+            }
         }
-        self::$legacy_values['airtime_version'] = trim($version);
+
+        if (getenv('LIBRETIME_VERSION')) {
+            $version = trim(getenv('LIBRETIME_VERSION'));
+        }
+
+        self::$legacy_values['airtime_version'] = $version;
     }
 
     public static function getConfig()

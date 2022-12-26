@@ -13,15 +13,15 @@ class Application_Service_MediaService
     /** Move (or copy) a file to the stor/organize directory and send it off to the
      * analyzer to be processed.
      *
-     * @param $fileId
      * @param $filePath string Path to the local file to import to the library
      * @param $originalFilename string The original filename, if you want it to be preserved after import
      * @param $ownerId string The ID of the user that will own the file inside Airtime
      * @param $copyFile bool True if you want to copy the file to the "organize" directory, false if you want to move it (default)
-     *
-     * @throws Exception
+     * @param mixed $fileId
      *
      * @return Ambigous
+     *
+     * @throws Exception
      */
     public static function importFileToLibrary($fileId, $filePath, $originalFilename, $ownerId, $copyFile)
     {
@@ -29,7 +29,7 @@ class Application_Service_MediaService
 
         // Copy the temporary file over to the "organize" folder so that it's off our webserver
         // and accessible by libretime-analyzer which could be running on a different machine.
-        $newTempFilePath = Application_Model_StoredFile::moveFileToStor($filePath, $originalFilename, $copyFile);
+        $newTempFilePath = Application_Model_StoredFile::moveFileToStor($filePath, $fileId, $originalFilename, $copyFile);
 
         // Dispatch a message to libretime-analyzer through RabbitMQ,
         // notifying it that there's a new upload to process!
@@ -44,8 +44,8 @@ class Application_Service_MediaService
     }
 
     /**
-     * @param $fileId
-     * @param bool $inline Set the Content-Disposition header to inline to prevent a download dialog from popping up (or attachment if false)
+     * @param bool  $inline Set the Content-Disposition header to inline to prevent a download dialog from popping up (or attachment if false)
+     * @param mixed $fileId
      *
      * @throws Exception
      * @throws LibreTimeFileNotFoundException

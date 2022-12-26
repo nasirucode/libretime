@@ -1,5 +1,3 @@
-import signal
-import sys
 from collections import deque
 from datetime import datetime
 from queue import Empty, Queue
@@ -12,16 +10,9 @@ from ..utils import seconds_between
 from .liquidsoap import PypoLiquidsoap
 
 
-def keyboardInterruptHandler(signum, frame):
-    logger.info("\nKeyboard Interrupt\n")
-    sys.exit(0)
-
-
-signal.signal(signal.SIGINT, keyboardInterruptHandler)
-
-
 class PypoLiqQueue(Thread):
     name = "liquidsoap_queue"
+    daemon = True
 
     def __init__(
         self,

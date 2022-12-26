@@ -1,28 +1,11 @@
-%include "/etc/libretime/liquidsoap.cfg"
-
-if (log_file != "") then
-    set("log.file.path", log_file)
-else
-    set("log.file", false)
-end
-
-set("server.telnet", true)
-set("server.telnet.port", 1234)
+time = ref string_of(gettimeofday())
 
 #Dynamic source list
 #dyn_sources = ref []
 webstream_enabled = ref false
 
-time = ref string_of(gettimeofday())
-
-#live stream setup
-set("harbor.bind_addrs", ["0.0.0.0"])
-
 current_dyn_id = ref '-1'
 
-stream_metadata_type = ref 0
-default_dj_fade = ref 0.
-station_name = ref ''
 show_name = ref ''
 
 dynamic_metadata_callback = ref fun (~new_track=false, s) -> begin () end
@@ -46,31 +29,10 @@ def check_version(~version=liquidsoap.version, major, minor) =
     list.nth(v,0,default=0) > major or list.nth(v,0,default=0) == major and list.nth(v,1,default=0) >= minor
 end
 
-# cue cut fix for liquidsoap <1.2.2
-#
-# This was most likely broken on 1.1.1 (debian) as well.
-#
-# adapted from https://github.com/savonet/liquidsoap/issues/390#issuecomment-277562081
-#
-def fix_cue_in(~cue_in_metadata='liq_cue_in', m) =
-    # 0.04 might need to be adjusted according to your frame size
-    if float_of_string(m[cue_in_metadata]) < 0.04 then
-        [(cue_in_metadata, "0")]
-    else
-        []
-    end
-end
-
 def create_source()
     l = request.equeue(id="s#{!source_id}", length=0.5)
 
     l = audio_to_stereo(id="queue_src", l)
-
-    l = if not check_version(1, 3) then
-        map_metadata(fix_cue_in, l)
-    else
-        l
-    end
     l = cue_cut(l)
     l = amplify(1., override="replay_gain", l)
 
@@ -124,6 +86,9 @@ server.register(namespace="vars",
                 "station_name",
                 fun (s) -> begin log("vars.station_name") station_name := s s end)
 server.register(namespace="vars",
+                "off_air_meta",
+                fun (s) -> begin log("vars.off_air_meta") off_air_meta := s s end)
+server.register(namespace="vars",
                 "bootup_time",
                 fun (s) -> begin log("vars.bootup_time") time := s s end)
 server.register(namespace="streams",
@@ -176,12 +141,11 @@ server.register(namespace="dynamic_source",
 #                fun (s) -> begin log("dynamic_source.read_stop") destroy_dynamic_source_all() end)
 
 default = amplify(id="silence_src", 0.00001, noise())
-ref_off_air_meta = ref off_air_meta
-if !ref_off_air_meta == "" then
-    ref_off_air_meta := "LibreTime - offline"
+if !off_air_meta == "" then
+    off_air_meta := "LibreTime - offline"
 end
 def map_off_air_meta(m) =
-  [("title", !ref_off_air_meta)]
+  [("title", !off_air_meta)]
 end
 default = map_metadata(map_off_air_meta, default)
 ignore(output.dummy(default, fallible=true))

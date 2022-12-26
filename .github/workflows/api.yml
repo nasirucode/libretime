@@ -4,16 +4,21 @@ on:
   push:
     branches: [main]
     paths:
-      - .github/workflows/**
+      - .github/workflows/_python.yml
+      - .github/workflows/api.yml
       - api/**
       - shared/**
 
   pull_request:
     branches: [main]
     paths:
-      - .github/workflows/**
+      - .github/workflows/_python.yml
+      - .github/workflows/api.yml
       - api/**
       - shared/**
+
+  schedule:
+    - cron: 0 1 * * 1
 
 jobs:
   python:
@@ -28,10 +33,8 @@ jobs:
       fail-fast: false
       matrix:
         release:
-          - buster
-          - bullseye
-          - bionic
           - focal
+          - bullseye
           - jammy
 
     services:
@@ -66,7 +69,7 @@ jobs:
             ${{ matrix.release }}-pip-api
 
       - name: Test
-        run: make test
+        run: make test-coverage
         working-directory: api
 
       - name: Report coverage

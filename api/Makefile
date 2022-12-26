@@ -9,27 +9,17 @@ PYLINT_ARG := libretime_api
 MYPY_ARG := libretime_api
 BANDIT_ARG := --exclude '*/tests/*' libretime_api || true
 
+export DJANGO_SETTINGS_MODULE=libretime_api.settings.testing
+
 format: .format
 lint: .format-check .pylint .mypy .bandit
+test: .pytest
+test-coverage: .coverage
 clean: .clean
-
-test: $(VENV)
-	source $(VENV)/bin/activate
-	export DJANGO_SETTINGS_MODULE=libretime_api.settings.testing
-	pytest -v \
-		--numprocesses=$(CPU_CORES) \
-		--color=yes \
-		--cov-config=pyproject.toml \
-		--cov-report=term \
-		--cov-report=xml:./coverage.xml \
-		--cov=libretime_api \
-		libretime_api
 
 SCHEMA_FILE ?= schema.yml
 schema: $(VENV)
-	source $(VENV)/bin/activate
-	export DJANGO_SETTINGS_MODULE=libretime_api.settings.testing
-	libretime-api spectacular --file $(SCHEMA_FILE)
+	$(VENV)/bin/libretime-api spectacular --file $(SCHEMA_FILE)
 	if command -v npx > /dev/null; then npx prettier --write $(SCHEMA_FILE); fi
 
 schema-foreach-commit:

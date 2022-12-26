@@ -1,10 +1,9 @@
 from pathlib import Path
 from subprocess import CalledProcessError, check_output, run
 from time import sleep
-from typing import Any, Optional, Tuple
+from typing import Any, Literal, Optional, Tuple
 
 from loguru import logger
-from typing_extensions import Literal
 
 from ..version import parse_liquidsoap_version
 from ._connection import LiquidsoapConnection
@@ -120,6 +119,7 @@ class LiquidsoapClient:
         *,
         station_name: Optional[str] = None,
         message_format: Optional[int] = None,
+        message_offline: Optional[str] = None,
         input_fade_transition: Optional[float] = None,
     ):
         with self.conn:
@@ -127,6 +127,8 @@ class LiquidsoapClient:
                 self._set_var("station_name", station_name)
             if message_format is not None:
                 self._set_var("stream_metadata_type", message_format)
+            if message_offline is not None:
+                self._set_var("off_air_meta", message_offline)
             if input_fade_transition is not None:
                 self._set_var("default_dj_fade", input_fade_transition)
 

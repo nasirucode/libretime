@@ -32,7 +32,7 @@ This guide walks you through the steps required to release a new version of Libr
 
 :::caution
 
-This guide is still a work in progress, and does not cover every use cases. Depending on
+This guide is still a work in progress, and doesn't cover every use cases. Depending on
 the version bump, some steps might be wrong. For example, in case of a patch release,
 the documentation requires different changes.
 
@@ -58,7 +58,8 @@ Create a new `release-$VERSION` branch and release commit to prepare a release p
 
 ```bash
 git checkout -b "release-$VERSION"
-git commit --allow-empty "chore: release $VERSION"
+export COMMIT_MESSAGE="chore: release $VERSION"
+git commit --allow-empty --message="$COMMIT_MESSAGE"
 ```
 
 ### 1. Version bump
@@ -66,11 +67,10 @@ git commit --allow-empty "chore: release $VERSION"
 Write the new `$VERSION` to the VERSION file, and bump the python packages version:
 
 ```bash
-echo $VERSION > VERSION
-bash tools/bump-python-version.sh
+bash tools/bump-python-version.sh "$VERSION"
 
 git add .
-git commit --fixup ":/chore: release $VERSION"
+git commit --fixup ":/$COMMIT_MESSAGE"
 ```
 
 ### 2. Release note
@@ -93,39 +93,14 @@ The release note file must be updated with:
 
 Reset and clean the `docs/releases/unreleased.md` file for a future version.
 
-Update the Github release creation job to use the new release note file in `.github/workflows/release.yml`.
-
 Commit the release note changes:
 
 ```bash
 git add .
-git commit --fixup ':/chore: release'
+git commit --fixup ":/$COMMIT_MESSAGE"
 ```
 
-### 3. Website and docs
-
-Update the version in the website files, the files that need changing are:
-
-- `website/vars.js`
-- `website/versions.json`
-
-Replace the old versioned docs with the current docs:
-
-```bash
-mv website/versioned_sidebars/version-*-sidebars.json website/versioned_sidebars/version-$VERSION-sidebars.json
-
-rm -R website/versioned_docs/version-*
-cp -R docs website/versioned_docs/version-$VERSION
-```
-
-Commit the website and docs changes:
-
-```bash
-git add .
-git commit --fixup ':/chore: release'
-```
-
-### 4. Create a new pull request
+### 3. Create a new pull request
 
 Squash the changes and open a pull request for others to review:
 
@@ -133,9 +108,9 @@ Squash the changes and open a pull request for others to review:
 git rebase --autosquash --interactive main
 ```
 
-Merge the pull request when it is reviewed and ready.
+Merge the pull request when it's reviewed and ready.
 
-### 5. Create and push a tag
+### 4. Create and push a tag
 
 Pull the merged release commit:
 
@@ -150,6 +125,15 @@ Make sure `HEAD` is the previously merged release commit and tag it with the new
 git show --quiet
 
 git tag -a -m "$VERSION" "$VERSION"
+```
+
+Generate the changelog for the newly tagged version:
+
+```bash
+make changelog
+
+git add .
+git commit -m "chore: generate changelog for $VERSION"
 ```
 
 Push the tag upstream to finalize the release process:

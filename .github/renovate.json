@@ -1,10 +1,14 @@
 {
-  "extends": [
-    "config:base",
-    ":enablePreCommit",
-    ":preserveSemverRanges",
-    ":disableDependencyDashboard"
-  ],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":enablePreCommit", ":preserveSemverRanges"],
+  "baseBranches": ["main", "3.0.x"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "commitMessageAction": "lock file maintenance",
+    "commitMessageExtra": "({{packageFile}})",
+    "branchTopic": "lock-file-maintenance-{{packageFile}}",
+    "schedule": ["after 4am and before 5am on monday"]
+  },
   "labels": ["dependencies"],
   "packageRules": [
     {
@@ -17,20 +21,12 @@
     },
     {
       "matchManagers": ["pip_setup", "pip_requirements"],
-      "addLabels": ["python"]
-    },
-    {
-      "matchPaths": ["website/**"],
-      "addLabels": ["javascript"],
-      "extends": ["monorepo:docusaurus"]
+      "addLabels": ["python"],
+      "rangeStrategy": "widen"
     },
     {
       "matchUpdateTypes": ["patch"],
-      "matchPaths": [
-        ".github/workflows/*",
-        ".pre-commit-config.yaml",
-        "website/**"
-      ],
+      "matchPaths": [".github/workflows/*", ".pre-commit-config.yaml"],
       "automerge": true
     }
   ]

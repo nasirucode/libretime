@@ -2,7 +2,6 @@
 Python part of radio playout (pypo)
 """
 
-import signal
 import sys
 import time
 from datetime import datetime
@@ -22,17 +21,12 @@ from .config import CACHE_DIR, RECORD_DIR, Config
 from .history.stats import StatsCollectorThread
 from .liquidsoap.client import LiquidsoapClient
 from .liquidsoap.version import LIQUIDSOAP_MIN_VERSION
-from .message_handler import PypoMessageHandler
+from .message_handler import MessageListener
 from .player.fetch import PypoFetch
 from .player.file import PypoFile
 from .player.liquidsoap import PypoLiquidsoap
 from .player.push import PypoPush
 from .recorder import Recorder
-
-
-def keyboardInterruptHandler(signum, frame):
-    logger.info("\nKeyboard Interrupt\n")
-    sys.exit(0)
 
 
 @click.command(context_settings={"auto_envvar_prefix": DEFAULT_ENV_PREFIX})
@@ -62,8 +56,6 @@ def cli(log_level: str, log_filepath: Optional[Path], config_filepath: Optional[
     # log entries were made
     logger.info("Timezone: %s" % str(time.tzname))
     logger.info("UTC time: %s" % str(datetime.utcnow()))
-
-    signal.signal(signal.SIGINT, keyboardInterruptHandler)
 
     legacy_client = LegacyClient()
     api_client = ApiClient(
@@ -104,14 +96,7 @@ def cli(log_level: str, log_filepath: Optional[Path], config_filepath: Optional[
 
     pypo_liquidsoap = PypoLiquidsoap(liq_client)
 
-    # Pass only the configuration sections needed; PypoMessageHandler only
-    # needs rabbitmq settings
-    message_handler = PypoMessageHandler(fetch_queue, recorder_queue, config.rabbitmq)
-    message_handler.daemon = True
-    message_handler.start()
-
     file_thread = PypoFile(file_queue, api_client)
-    file_thread.daemon = True
     file_thread.start()
 
     fetch_thread = PypoFetch(
@@ -124,21 +109,16 @@ def cli(log_level: str, log_filepath: Optional[Path], config_filepath: Optional[
         api_client,
         legacy_client,
     )
-    fetch_thread.daemon = True
     fetch_thread.start()
 
     push_thread = PypoPush(push_queue, pypo_liquidsoap, config)
-    push_thread.daemon = True
     push_thread.start()
 
     recorder_thread = Recorder(recorder_queue, config, legacy_client)
-    recorder_thread.daemon = True
     recorder_thread.start()
 
-    stats_collector_thread = StatsCollectorThread(legacy_client)
+    stats_collector_thread = StatsCollectorThread(config, legacy_client)
     stats_collector_thread.start()
 
-    # Just sleep the main thread, instead of blocking on fetch_thread.join().
-    # This allows CTRL-C to work!
-    while True:
-        time.sleep(1)
+    message_listener = MessageListener(config, fetch_queue, recorder_queue)
+    message_listener.run_forever()

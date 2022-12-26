@@ -19,18 +19,14 @@ If you are coming from **Airtime**, please follow the [Airtime migration guide](
 You can install LibreTime using the one of the following methods:
 
 - [:rocket: Using the installer](#using-the-installer)
-- :construction: Using Ansible
+- [:rocket: Using docker-compose](#using-docker-compose)
+- :construction: Using ansible
 
-#### Minimum system requirements
+### Minimum system requirements
 
 - 1 Ghz Processor
 - 2 GB RAM recommended (1 GB required)
 - A static external IP address ([How to setup a static ip using Netplan](../tutorials/setup-a-static-ip-using-netplan.md))
-
-One of the [supported distribution releases](../../developer-manual/development/releases.md#distributions-releases-support):
-
-- [Debian 11](https://www.debian.org/releases/)
-- [Ubuntu 20.04 LTS](https://wiki.ubuntu.com/Releases)
 
 :::warning
 
@@ -49,6 +45,11 @@ LibreTime requires the following default ports to be open:
 ## Using the installer
 
 The installer is shipped in the released tarballs or directly in the project repository.
+
+We recommend installing on one of the following [distribution releases](../../developer-manual/development/releases.md#distributions-releases-support):
+
+- [Debian 11](https://www.debian.org/releases/)
+- [Ubuntu 20.04 LTS](https://wiki.ubuntu.com/Releases)
 
 ### Before installing
 
@@ -109,7 +110,7 @@ cd libretime
 
 :::caution
 
-Don't use the https://github.com/libretime/libretime-debian-packaging repository, it is only used to create LibreTime packages.
+Don't use the https://github.com/libretime/libretime-debian-packaging repository, it's only used to create LibreTime packages.
 
 :::
 
@@ -153,9 +154,9 @@ If you need to change some configuration, the install script can be configured u
 
 ```bash
 # Install LibreTime on your system with the following tweaks:
-# - do not install the liquidsoap package (remember to install liquidsoap yourself)
+# - don't install the liquidsoap package (remember to install liquidsoap yourself)
 # - set the listen port to 8080
-# - do not run the PostgreSQL setup (remember to setup PostgreSQL yourself)
+# - don't run the PostgreSQL setup (remember to setup PostgreSQL yourself)
 sudo \
 LIBRETIME_PACKAGES_EXCLUDES='liquidsoap' \
 ./install \
@@ -199,13 +200,7 @@ Next, run the following commands to setup the database:
 sudo -u libretime libretime-api migrate
 ```
 
-Synchronize the new Icecast passwords into the database:
-
-```bash
-sudo libretime-api set_icecast_passwords --from-icecast-config
-```
-
-Finally, start the services, and check that they are running properly using the following commands:
+Finally, start the services, and check that they're running properly using the following commands:
 
 ```bash
 sudo systemctl start libretime.target
@@ -213,13 +208,83 @@ sudo systemctl start libretime.target
 sudo systemctl --all --plain | grep libretime
 ```
 
-#### Configure
+Next, continue by [configuring your installation](#configure).
 
-Once the setup is completed, log in the interface and make sure to edit the project settings (go to **Settings** > **General**) to match your needs. Important settings are:
+## Using docker-compose
 
-- Timezone
+:::warning
+
+The docker-compose install is still a work in progress and is **EXPERIMENTAL**, breaking changes may occur without notice.
+
+:::
+
+### Download
+
+Pick the version you want to install:
+
+<CodeBlock language="bash">
+echo LIBRETIME_VERSION="{vars.version}" > .env
+</CodeBlock>
+
+Download the docker-compose files from the repository:
+
+```bash
+# Load LIBRETIME_VERSION variable
+source .env
+
+wget "https://raw.githubusercontent.com/libretime/libretime/$LIBRETIME_VERSION/docker-compose.yml"
+wget "https://raw.githubusercontent.com/libretime/libretime/$LIBRETIME_VERSION/docker/nginx.conf"
+wget "https://raw.githubusercontent.com/libretime/libretime/$LIBRETIME_VERSION/docker/config.yml"
+```
+
+### Setup
+
+Once the files are downloaded, edit the [configuration file](./configuration.md) at `./config.yml` to fill required information and to match your needs.
+
+:::info
+
+The `docker/config.yml` configuration file you previously downloaded already contains specific values required by the container setup, you shouldn't change them:
+
+```yaml
+database:
+  host: "postgres"
+rabbitmq:
+  host: "rabbitmq"
+playout:
+  liquidsoap_host: "liquidsoap"
+liquidsoap:
+  server_listen_address: "0.0.0.0"
+stream:
+  outputs:
+    .default_icecast_output:
+      host: "icecast"
+```
+
+:::
+
+Next, run the following commands to setup the database:
+
+```bash
+docker-compose run --rm api libretime-api migrate
+```
+
+Finally, start the services, and check that they're running properly using the following commands:
+
+```bash
+docker-compose up -d
+
+docker-compose ps
+docker-compose logs -f
+```
+
+Next, continue by [configuring your installation](#configure).
+
+## Configure
+
+Once the setup is completed, log in the interface (with the default user `admin` and password `admin`), and make sure to edit the project settings (go to **Settings** > **General**) to match your needs. Important settings are:
+
 - First day of the week
 
-### Next
+## Next
 
 Once completed, it's recommended to [install a reverse proxy](./reverse-proxy.md) to setup SSL termination and secure your installation.

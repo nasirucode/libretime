@@ -6,7 +6,7 @@
 # export VAGRANT_NO_PORT_FORWARDING=true
 # export VAGRANT_CPUS=4
 # export VAGRANT_MEMORY=4096
-# vagrant up buster
+# vagrant up bullseye
 #
 
 Vagrant.configure('2') do |config|
@@ -83,29 +83,20 @@ Vagrant.configure('2') do |config|
       --in-place \
       http://192.168.10.100:8080
 
+    installer/vagrant/post-install.sh
+
     libretime-api migrate
-    libretime-api set_icecast_passwords --from-icecast-config
 
     systemctl restart libretime.target
     SCRIPT
 
     config.vm.provision 'install', type: 'shell', inline: $script
-
-    config.vm.provision 'post-install',
-                        type: 'shell',
-                        path: 'installer/vagrant/post-install.sh'
   end
 
   # Define all the OS boxes we support
   config.vm.define "focal" do |os|
     os.vm.box = "bento/ubuntu-20.04"
     setup_libretime(os, "debian.sh")
-  end
-
-  config.vm.define 'bionic' do |os|
-    os.vm.box = 'bento/ubuntu-18.04'
-    setup_nfs(config)
-    setup_libretime(os, 'debian.sh')
   end
 
   config.vm.define 'bullseye' do |os|
@@ -115,20 +106,5 @@ Vagrant.configure('2') do |config|
     end
     setup_nfs(config, 4)
     setup_libretime(os, 'debian.sh')
-  end
-
-  config.vm.define 'buster' do |os|
-    os.vm.box = 'debian/buster64'
-    config.vm.provider 'virtualbox' do |v, override|
-      override.vm.box = 'bento/debian-10'
-    end
-    setup_nfs(config)
-    setup_libretime(os, 'debian.sh')
-  end
-
-  config.vm.define 'centos' do |os|
-    os.vm.box = 'centos/8'
-    setup_nfs(config)
-    setup_libretime(os, 'centos.sh', '--selinux')
   end
 end

@@ -1,6 +1,10 @@
+conexant
 hda
 HDA
-conexant
+ro
+
+# Names
+flor
 
 # TODO: See https://github.com/savonet/liquidsoap/issues/1654
 prefered

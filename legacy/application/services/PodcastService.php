@@ -44,10 +44,10 @@ class Application_Service_PodcastService
      *
      * @param string $feedUrl Podcast RSS Feed Url
      *
+     * @return array Podcast Array with a full list of episodes
+     *
      * @throws Exception
      * @throws InvalidPodcastException
-     *
-     * @return array Podcast Array with a full list of episodes
      */
     public static function createFromFeedUrl($feedUrl)
     {
@@ -142,9 +142,9 @@ class Application_Service_PodcastService
     }
 
     /**
-     * @param $podcast
      * @param $title passed in directly from web UI input
      * This will automatically create a smartblock and playlist for this podcast
+     * @param mixed $podcast
      */
     public static function createPodcastSmartblockAndPlaylist($podcast, $title = null)
     {
@@ -276,12 +276,12 @@ class Application_Service_PodcastService
      * Fetches a Podcast's rss feed and returns all its episodes with
      * the Podcast object.
      *
-     * @param $podcastId
+     * @param mixed $podcastId
+     *
+     * @return array - Podcast Array with a full list of episodes
      *
      * @throws PodcastNotFoundException
      * @throws InvalidPodcastException
-     *
-     * @return array - Podcast Array with a full list of episodes
      */
     public static function getPodcastById($podcastId)
     {
@@ -299,7 +299,7 @@ class Application_Service_PodcastService
     /**
      * Deletes a Podcast and its podcast episodes.
      *
-     * @param $podcastId
+     * @param mixed $podcastId
      *
      * @throws Exception
      * @throws PodcastNotFoundException
@@ -325,9 +325,9 @@ class Application_Service_PodcastService
      * @param int                 $podcastId ID of the podcast to build a response for
      * @param Zend_View_Interface $view      Zend view object to render the response HTML
      *
-     * @throws PodcastNotFoundException
-     *
      * @return array the response array containing the podcast data and editor HTML
+     *
+     * @throws PodcastNotFoundException
      */
     public static function buildPodcastEditorResponse($podcastId, $view)
     {
@@ -346,13 +346,13 @@ class Application_Service_PodcastService
     /**
      * Updates a Podcast object with the given metadata.
      *
-     * @param $podcastId
-     * @param $data
+     * @param mixed $podcastId
+     * @param mixed $data
+     *
+     * @return array
      *
      * @throws Exception
      * @throws PodcastNotFoundException
-     *
-     * @return array
      */
     public static function updatePodcastFromArray($podcastId, $data)
     {

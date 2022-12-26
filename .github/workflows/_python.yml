@@ -51,10 +51,8 @@ jobs:
       fail-fast: false
       matrix:
         release:
-          - buster
-          - bullseye
-          - bionic
           - focal
+          - bullseye
           - jammy
 
     container:
@@ -75,7 +73,7 @@ jobs:
             ${{ matrix.release }}-pip-${{ inputs.context }}
 
       - name: Test
-        run: make test
+        run: make test-coverage
         working-directory: ${{ inputs.context }}
 
       - name: Report coverage

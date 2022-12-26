@@ -5,6 +5,31 @@ sidebar_position: 20
 
 To configure LibreTime, you need to edit the `/etc/libretime/config.yml` file. This page describe the available options to configure your installation.
 
+Don't forget to restart the services after you made changes to the configuration file:
+
+```
+sudo systemctl restart libretime.target
+```
+
+:::tip
+
+When upgrading, if [`yq`](https://mikefarah.gitbook.io/yq/) is installed on your system, you can easily keep your configuration file schema in sync, without losing your configuration values:
+
+```bash
+# Load your existing configuration values and merge them on top
+# of the default configuration file
+yq '. *= (load("/etc/libretime/config.yml") | ... comments="")' \
+  installer/config.yml > update-config.yml
+
+# Check what has been updated
+diff -y /etc/libretime/config.yml update-config.yml
+
+# Move the updated configuration file in place
+sudo cp update-config.yml /etc/libretime/config.yml
+```
+
+:::
+
 ## General
 
 The `general` section configure anything related to the legacy and API services.
@@ -18,10 +43,15 @@ general:
   # > this field is REQUIRED
   api_key: "some_random_generated_secret!"
 
-  # List of origins allowed to access resources on the server, the public url
-  # origin is automatically included.
+  # List of origins allowed to access resources on the server,
+  # the [general.public_url] origin is automatically included.
   # > default is []
   allowed_cors_origins: []
+
+  # The server timezone, should be a lookup key in the IANA time zone database,
+  # for example Europe/Berlin.
+  # > default is UTC
+  timezone: UTC
 
   # How many hours ahead Playout should cache scheduled media files.
   # > default is 1
@@ -33,15 +63,6 @@ general:
   auth: "local"
 ```
 
-In order to apply the changes made in this section, please restart the following services:
-
-```
-libretime-analyzer
-libretime-api
-libretime-playout
-libretime-worker
-```
-
 ## Storage
 
 The `storage` section configure the project storage.
@@ -51,12 +72,6 @@ storage:
   # Path of the storage directory.
   # > default is /srv/libretime
   path: "/srv/libretime"
-```
-
-In order to apply the changes made in this section, please restart the following services:
-
-```
-libretime-api
 ```
 
 ## Database
@@ -96,12 +111,6 @@ database:
   password: "some_random_generated_secret!"
 ```
 
-In order to apply the changes made in this section, please restart the following services:
-
-```
-libretime-api
-```
-
 ## RabbitMQ
 
 The `rabbitmq` section configure the RabbitMQ connection.
@@ -139,18 +148,15 @@ rabbitmq:
   password: "some_random_generated_secret!"
 ```
 
-In order to apply the changes made in this section, please restart the following services:
-
-```
-libretime-analyzer
-libretime-api
-libretime-playout
-libretime-worker
-```
-
 ## Playout
 
 The `playout` section configure anything related to the playout service.
+
+:::caution
+
+When changing the `playout.liquidsoap_*` entries, make sure to also configure the `liquidsoap.server_listen_*` entries accordingly.
+
+:::
 
 ```yml
 playout:
@@ -179,10 +185,269 @@ playout:
   record_sample_size: 16
 ```
 
-In order to apply the changes made in this section, please restart the following services:
+## Liquidsoap
 
+The `liquidsoap` section configure anything related to the liquidsoap service.
+
+:::caution
+
+When changing the `liquidsoap.server_listen_*` entries, make sure to also configure the `playout.liquidsoap_*` entries accordingly.
+
+:::
+
+```yml
+liquidsoap:
+  # Liquidsoap server listen address.
+  # > default is 127.0.0.1
+  server_listen_address: "127.0.0.1"
+  # Liquidsoap server listen port.
+  # > default is 1234
+  server_listen_port: 1234
+
+  # Input harbor listen address.
+  # > default is ["0.0.0.0"]
+  harbor_listen_address: ["0.0.0.0"]
 ```
-libretime-playout
+
+## Stream
+
+The `stream` section configures anything related to the input and output streams.
+
+```yml
+stream:
+  inputs: # See the [stream.inputs] section.
+  outputs: # See the [stream.outputs] section.
+```
+
+:::info
+
+To help you simplify your stream configuration, you can use yaml anchors to define a common properties and reuse them in your output definitions:
+
+```yml
+stream:
+  outputs:
+    # This can be reused to define multiple outputs without duplicating data
+    .default_icecast_output: &default_icecast_output
+      source_password: "hackme"
+      admin_password: "hackme"
+      name: "LibreTime!"
+      description: "LibreTime Radio!"
+      website: "https://libretime.org"
+      genre: "various"
+
+    icecast:
+      - <<: *default_icecast_output
+        enabled: true
+        mount: "main.ogg"
+        audio:
+          format: "ogg"
+          bitrate: 256
+
+      - <<: *default_icecast_output
+        enabled: true
+        mount: "main.mp3"
+        audio:
+          format: "mp3"
+          bitrate: 256
+```
+
+:::
+
+### Inputs
+
+The `stream.inputs` section configures anything related to the input streams.
+
+```yml
+stream:
+  # Inputs sources.
+  inputs:
+    # Main harbor input.
+    main:
+      # Harbor input public url. If not defined, the value will be generated from
+      # the [general.public_url] hostname, the input port and mount.
+      public_url:
+      # Mount point for the main harbor input.
+      # > default is main
+      mount: "main"
+      # Listen port for the main harbor input.
+      # > default is 8001
+      port: 8001
+
+    # Show harbor input.
+    show:
+      # Harbor input public url. If not defined, the value will be generated from
+      # the [general.public_url] hostname, the input port and mount.
+      public_url:
+      # Mount point for the show harbor input.
+      # > default is show
+      mount: "show"
+      # Listen port for the show harbor input.
+      # > default is 8002
+      port: 8002
+```
+
+### Outputs
+
+The `stream.outputs` section configures anything related to the output streams.
+
+```yml
+stream:
+  # Output streams.
+  outputs:
+    icecast: # See the [stream.outputs.icecast] section.
+    shoutcast: # See the [stream.outputs.shoutcast] section.
+    system: # See the [stream.outputs.system] section.
+```
+
+#### Icecast
+
+The `stream.outputs.icecast` section configures the icecast output streams.
+
+:::warning
+
+If you configure more than 2 icecast stream on a **single icecast server**, make sure to raise the icecast sources limit:
+
+```xml
+<icecast>
+  <limits>
+    <sources>2</sources>
+  </limits>
+</icecast>
+```
+
+:::
+
+```yml
+stream:
+  outputs:
+    # Icecast output streams.
+    # > max items is 3
+    icecast:
+      - # Whether the output is enabled.
+        # > default is false
+        enabled: false
+        # Output public url, If not defined, the value will be generated from
+        # the [general.public_url] hostname, the output port and mount.
+        public_url:
+        # Icecast server host.
+        # > default is localhost
+        host: "localhost"
+        # Icecast server port.
+        # > default is 8000
+        port: 8000
+        # Icecast server mount point.
+        # > this field is REQUIRED
+        mount: "main"
+        # Icecast source user.
+        # > default is source
+        source_user: "source"
+        # Icecast source password.
+        # > this field is REQUIRED
+        source_password: "hackme"
+        # Icecast admin user.
+        # > default is admin
+        admin_user: "admin"
+        # Icecast admin password. If not defined, statistics won't be collected.
+        admin_password: "hackme"
+
+        # Icecast output audio.
+        audio:
+          # Icecast output audio format.
+          # > must be one of (aac, mp3, ogg, opus)
+          # > this field is REQUIRED
+          format: "ogg"
+          # Icecast output audio bitrate.
+          # > must be one of (32, 48, 64, 96, 128, 160, 192, 224, 256, 320)
+          # > this field is REQUIRED
+          bitrate: 256
+
+          # format=ogg only field: Embed metadata (track title, artist, and show name)
+          # in the output stream. Some bugged players will disconnect from the stream
+          # after every songs when playing ogg streams that have metadata information
+          # enabled.
+          # > default is false
+          enable_metadata: false
+
+        # Icecast stream name.
+        name: "LibreTime!"
+        # Icecast stream description.
+        description: "LibreTime Radio!"
+        # Icecast stream website.
+        website: "https://libretime.org"
+        # Icecast stream genre.
+        genre: "various"
+```
+
+#### Shoutcast
+
+The `stream.outputs.shoutcast` section configures the shoutcast output streams.
+
+```yml
+stream:
+  outputs:
+    # Shoutcast output streams.
+    # > max items is 1
+    shoutcast:
+      - # Whether the output is enabled.
+        # > default is false
+        enabled: false
+        # Output public url. If not defined, the value will be generated from
+        # the [general.public_url] hostname and the output port.
+        public_url:
+        # Shoutcast server host.
+        # > default is localhost
+        host: "localhost"
+        # Shoutcast server port.
+        # > default is 8000
+        port: 8000
+        # Shoutcast source user.
+        # > default is source
+        source_user: "source"
+        # Shoutcast source password.
+        # > this field is REQUIRED
+        source_password: "hackme"
+        # Shoutcast admin user.
+        # > default is admin
+        admin_user: "admin"
+        # Shoutcast admin password. If not defined, statistics won't be collected.
+        admin_password: "hackme"
+
+        # Shoutcast output audio.
+        audio:
+          # Shoutcast output audio format.
+          # > must be one of (aac, mp3)
+          # > this field is REQUIRED
+          format: "mp3"
+          # Shoutcast output audio bitrate.
+          # > must be one of (32, 48, 64, 96, 128, 160, 192, 224, 256, 320)
+          # > this field is REQUIRED
+          bitrate: 256
+
+        # Shoutcast stream name.
+        name: "LibreTime!"
+        # Shoutcast stream website.
+        website: "https://libretime.org"
+        # Shoutcast stream genre.
+        genre: "various"
+```
+
+#### System
+
+The `stream.outputs.system` section configures the system outputs.
+
+```yml
+stream:
+  outputs:
+    # System outputs.
+    # > max items is 1
+    system:
+      - # Whether the output is enabled.
+        # > default is false
+        enabled: false
+        # System output kind.
+        # > must be one of (alsa, ao, oss, portaudio, pulseaudio)
+        # > default is alsa
+        kind: "alsa"
 ```
 
 ## LDAP

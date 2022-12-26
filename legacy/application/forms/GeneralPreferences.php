@@ -171,13 +171,6 @@ class Application_Form_GeneralPreferences extends Zend_Form_SubForm
         ]);
         $this->addElement($third_party_api);
 
-        $allowedCorsUrlsValue = Application_Model_Preference::GetAllowedCorsUrls();
-        $allowedCorsUrls = new Zend_Form_Element_Textarea('allowedCorsUrls');
-        $allowedCorsUrls->setLabel(_('Allowed CORS URLs (DEPRECATED)'));
-        $allowedCorsUrls->setDescription(_('Remote URLs that are allowed to access this LibreTime instance in a browser. One URL per line. (DEPRECATED: Allowed CORS origins configuration moved to the configuration file.)'));
-        $allowedCorsUrls->setValue($allowedCorsUrlsValue);
-        $this->addElement($allowedCorsUrls);
-
         $locale = new Zend_Form_Element_Select('locale');
         $locale->setLabel(_('Default Language'));
         $locale->setMultiOptions(Application_Model_Locale::getLocales());
@@ -187,6 +180,7 @@ class Application_Form_GeneralPreferences extends Zend_Form_SubForm
         // Form Element for setting the Timezone
         $timezone = new Zend_Form_Element_Select('timezone');
         $timezone->setLabel(_('Station Timezone'));
+        $timezone->setAttrib('disabled', 'true');
         $timezone->setMultiOptions(Application_Common_Timezone::getTimezones());
         $timezone->setValue(Application_Model_Preference::GetDefaultTimezone());
         $this->addElement($timezone);

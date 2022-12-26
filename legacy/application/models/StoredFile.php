@@ -108,7 +108,7 @@ class Application_Model_StoredFile
      * Set multiple metadata values using defined metadata constants.
      *
      * @param array $p_md
-     *                    example: $p_md['MDATA_KEY_URL'] = 'http://www.fake.com'
+     *                    example: $p_md['MDATA_KEY_URL'] = 'https://example.org'
      */
     public function setMetadata($p_md = null)
     {
@@ -163,7 +163,7 @@ class Application_Model_StoredFile
      * Set multiple metadata values using database columns as indexes.
      *
      * @param array $p_md
-     *                    example: $p_md['url'] = 'http://www.fake.com'
+     *                    example: $p_md['url'] = 'https://www.example.com'
      */
     public function setDbColMetadata($p_md = null)
     {
@@ -584,9 +584,9 @@ SQL;
      * @param Propel Connection
      * @param null|mixed $con
      *
-     * @throws Exception
-     *
      * @return Application_Model_StoredFile
+     *
+     * @throws Exception
      */
     public static function RecallById($p_id = null, $con = null)
     {
@@ -749,7 +749,7 @@ SQL;
                 $streamSelect[] = 'EXTRACT(YEAR FROM utime)::varchar AS ' . $key;
             }
             // need to cast certain data as ints for the union to search on.
-            elseif (in_array($key, ['track_number', 'bit_rate', 'sample_rate', 'bpm'])) {
+            elseif (in_array($key, ['track_number', 'bit_rate', 'sample_rate', 'bpm', 'track_type_id'])) {
                 $plSelect[] = 'NULL::int AS ' . $key;
                 $blSelect[] = 'NULL::int AS ' . $key;
                 $fileSelect[] = $key;
@@ -913,12 +913,13 @@ SQL;
      * @param string $tempFilePath
      * @param string $originalFilename
      * @param bool   $copyFile         copy the file instead of moving it
-     *
-     * @throws Exception
+     * @param mixed  $fileId
      *
      * @return Ambigous <unknown, string>
+     *
+     * @throws Exception
      */
-    public static function moveFileToStor($tempFilePath, $originalFilename, $copyFile = false)
+    public static function moveFileToStor($tempFilePath, $fileId, $originalFilename, $copyFile = false)
     {
         $audio_file = $tempFilePath;
 
@@ -938,7 +939,7 @@ SQL;
         $audio_stor = Application_Common_OsPath::join(
             $stor,
             'organize',
-            $originalFilename
+            $fileId . '-' . $originalFilename
         );
         // if the uploaded file is not UTF-8 encoded, let's encode it. Assuming source
         // encoding is ISO-8859-1

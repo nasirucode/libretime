@@ -27,7 +27,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issueLimit: ${{ github.event.inputs.issueLimit || '5' }}
-          ignore: .git,/docs/releases/*,/website/versioned*
+          ignore: .git,/docs/releases/*,CHANGELOG.md
 
   find_broken_links:
     if: github.repository_owner == 'libretime'
@@ -37,13 +37,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: actions/cache@v3
+        with:
+          path: .lycheecache
+          key: housekeeping-find-broken-links-${{ github.sha }}
+          restore-keys: housekeeping-find-broken-links-
+
       - name: Check Links
         id: lychee
-        uses: lycheeverse/lychee-action@v1.5.1
+        uses: lycheeverse/lychee-action@v1.5.4
         with:
           args: >-
             '**/*.md'
-            --exclude-path 'website/versioned_docs'
             --require-https
             --exclude-all-private
             --exclude-mail
@@ -53,6 +58,9 @@ jobs:
             --exclude 'https://dir.xiph.org/cgi-bin/yp-cgi'
             --exclude 'https://radio.indymedia.org/cgi-bin/yp-cgi'
             --exclude 'https://www.ascap.com'
+            --exclude 'github\.com/libretime/libretime/(issues|pulls)'
+            --cache
+            --max-cache-age 2d
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

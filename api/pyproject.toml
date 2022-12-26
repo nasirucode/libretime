@@ -1,3 +1,7 @@
+[tool.isort]
+profile = "black"
+combine_as_imports = true
+
 [tool.pylint.master]
 load-plugins = "pylint_django"
 django-settings-module = "libretime_api.settings.testing"
@@ -36,7 +40,10 @@ log_cli_level = "DEBUG"
 DJANGO_SETTINGS_MODULE = "libretime_api.settings.testing"
 
 [tool.coverage.run]
+plugins = ["django_coverage_plugin"]
+source = ["libretime_api"]
 omit = [
+  "*/migrations/*",
   "*/tests/*",
 ]
 

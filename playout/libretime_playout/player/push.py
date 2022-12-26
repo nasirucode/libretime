@@ -22,6 +22,7 @@ def is_file(media_item):
 
 class PypoPush(Thread):
     name = "push"
+    daemon = True
 
     def __init__(
         self,
@@ -42,7 +43,6 @@ class PypoPush(Thread):
         self.pypo_liquidsoap = pypo_liquidsoap
 
         self.plq = PypoLiqQueue(self.future_scheduled_queue, self.pypo_liquidsoap)
-        self.plq.daemon = True
         self.plq.start()
 
     def main(self):

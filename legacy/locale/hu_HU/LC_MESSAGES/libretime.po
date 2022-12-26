@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreTime\n"
 "Report-Msgid-Bugs-To: https://github.com/libretime/libretime/issues\n"
-"POT-Creation-Date: 2022-07-04 18:49+0200\n"
+"POT-Creation-Date: 2022-10-07 16:26+0200\n"
 "PO-Revision-Date: 2021-12-27 20:52+0000\n"
 "Last-Translator: f3rr31 <5920873@disroot.org>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/libretime/legacy/hu/>\n"
@@ -38,543 +38,543 @@ msgstr "%s-%s-%s érvénytelen dátum"
 msgid "%s:%s:%s is not a valid time"
 msgstr "%s:%s:%s érvénytelen időpont"
 
-#: application/common/LocaleHelper.php:23
+#: application/common/LocaleHelper.php:21
 msgid "English"
 msgstr "English"
 
-#: application/common/LocaleHelper.php:24
+#: application/common/LocaleHelper.php:22
 msgid "Afar"
 msgstr "Afar"
 
-#: application/common/LocaleHelper.php:25
+#: application/common/LocaleHelper.php:23
 msgid "Abkhazian"
 msgstr "Abkhazian"
 
-#: application/common/LocaleHelper.php:26
+#: application/common/LocaleHelper.php:24
 msgid "Afrikaans"
 msgstr "Afrikaans"
 
-#: application/common/LocaleHelper.php:27
+#: application/common/LocaleHelper.php:25
 msgid "Amharic"
 msgstr "Amharic"
 
-#: application/common/LocaleHelper.php:28
+#: application/common/LocaleHelper.php:26
 msgid "Arabic"
 msgstr "Arabic"
 
-#: application/common/LocaleHelper.php:29
+#: application/common/LocaleHelper.php:27
 msgid "Assamese"
 msgstr "Assamese"
 
-#: application/common/LocaleHelper.php:30
+#: application/common/LocaleHelper.php:28
 msgid "Aymara"
 msgstr "Aymara"
 
-#: application/common/LocaleHelper.php:31
+#: application/common/LocaleHelper.php:29
 msgid "Azerbaijani"
 msgstr "Azerbaijani"
 
-#: application/common/LocaleHelper.php:32
+#: application/common/LocaleHelper.php:30
 msgid "Bashkir"
 msgstr "Bashkir"
 
-#: application/common/LocaleHelper.php:33
+#: application/common/LocaleHelper.php:31
 msgid "Belarusian"
 msgstr "Belarusian"
 
-#: application/common/LocaleHelper.php:34
+#: application/common/LocaleHelper.php:32
 msgid "Bulgarian"
 msgstr "Bulgarian"
 
-#: application/common/LocaleHelper.php:35
+#: application/common/LocaleHelper.php:33
 msgid "Bihari"
 msgstr "Bihari"
 
-#: application/common/LocaleHelper.php:36
+#: application/common/LocaleHelper.php:34
 msgid "Bislama"
 msgstr "Bislama"
 
-#: application/common/LocaleHelper.php:37
+#: application/common/LocaleHelper.php:35
 msgid "Bengali/Bangla"
 msgstr "Bengali/Bangla"
 
-#: application/common/LocaleHelper.php:38
+#: application/common/LocaleHelper.php:36
 msgid "Tibetan"
 msgstr "Tibetan"
 
-#: application/common/LocaleHelper.php:39
+#: application/common/LocaleHelper.php:37
 msgid "Breton"
 msgstr "Breton"
 
-#: application/common/LocaleHelper.php:40
+#: application/common/LocaleHelper.php:38
 msgid "Catalan"
 msgstr "Catalan"
 
-#: application/common/LocaleHelper.php:41
+#: application/common/LocaleHelper.php:39
 msgid "Corsican"
 msgstr "Corsican"
 
-#: application/common/LocaleHelper.php:42
+#: application/common/LocaleHelper.php:40
 msgid "Czech"
 msgstr "Czech"
 
-#: application/common/LocaleHelper.php:43
+#: application/common/LocaleHelper.php:41
 msgid "Welsh"
 msgstr "Welsh"
 
-#: application/common/LocaleHelper.php:44
+#: application/common/LocaleHelper.php:42
 msgid "Danish"
 msgstr "Danish"
 
-#: application/common/LocaleHelper.php:45
+#: application/common/LocaleHelper.php:43
 msgid "German"
 msgstr "German"
 
-#: application/common/LocaleHelper.php:46
+#: application/common/LocaleHelper.php:44
 msgid "Bhutani"
 msgstr "Bhutani"
 
-#: application/common/LocaleHelper.php:47
+#: application/common/LocaleHelper.php:45
 msgid "Greek"
 msgstr "Greek"
 
-#: application/common/LocaleHelper.php:48
+#: application/common/LocaleHelper.php:46
 msgid "Esperanto"
 msgstr "Esperanto"
 
-#: application/common/LocaleHelper.php:49
+#: application/common/LocaleHelper.php:47
 msgid "Spanish"
 msgstr "Spanish"
 
-#: application/common/LocaleHelper.php:50
+#: application/common/LocaleHelper.php:48
 msgid "Estonian"
 msgstr "Estonian"
 
-#: application/common/LocaleHelper.php:51
+#: application/common/LocaleHelper.php:49
 msgid "Basque"
 msgstr "Basque"
 
-#: application/common/LocaleHelper.php:52
+#: application/common/LocaleHelper.php:50
 msgid "Persian"
 msgstr "Persian"
 
-#: application/common/LocaleHelper.php:53
+#: application/common/LocaleHelper.php:51
 msgid "Finnish"
 msgstr "Finnish"
 
-#: application/common/LocaleHelper.php:54
+#: application/common/LocaleHelper.php:52
 msgid "Fiji"
 msgstr "Fiji"
 
-#: application/common/LocaleHelper.php:55
+#: application/common/LocaleHelper.php:53
 msgid "Faeroese"
 msgstr "Faeroese"
 
-#: application/common/LocaleHelper.php:56
+#: application/common/LocaleHelper.php:54
 msgid "French"
 msgstr "French"
 
-#: application/common/LocaleHelper.php:57
+#: application/common/LocaleHelper.php:55
 msgid "Frisian"
 msgstr "Frisian"
 
-#: application/common/LocaleHelper.php:58
+#: application/common/LocaleHelper.php:56
 msgid "Irish"
 msgstr "Irish"
 
-#: application/common/LocaleHelper.php:59
+#: application/common/LocaleHelper.php:57
 msgid "Scots/Gaelic"
 msgstr "Scots/Gaelic"
 
-#: application/common/LocaleHelper.php:60
+#: application/common/LocaleHelper.php:58
 msgid "Galician"
 msgstr "Galician"
 
-#: application/common/LocaleHelper.php:61
+#: application/common/LocaleHelper.php:59
 msgid "Guarani"
 msgstr "Guarani"
 
-#: application/common/LocaleHelper.php:62
+#: application/common/LocaleHelper.php:60
 msgid "Gujarati"
 msgstr "Gujarati"
 
-#: application/common/LocaleHelper.php:63
+#: application/common/LocaleHelper.php:61
 msgid "Hausa"
 msgstr "Hausa"
 
-#: application/common/LocaleHelper.php:64
+#: application/common/LocaleHelper.php:62
 msgid "Hindi"
 msgstr "Hindi"
 
-#: application/common/LocaleHelper.php:65
+#: application/common/LocaleHelper.php:63
 msgid "Croatian"
 msgstr "Croatian"
 
-#: application/common/LocaleHelper.php:66
+#: application/common/LocaleHelper.php:64
 msgid "Hungarian"
 msgstr "magyar"
 
-#: application/common/LocaleHelper.php:67
+#: application/common/LocaleHelper.php:65
 msgid "Armenian"
 msgstr "Armenian"
 
-#: application/common/LocaleHelper.php:68
+#: application/common/LocaleHelper.php:66
 msgid "Interlingua"
 msgstr "Interlingua"
 
-#: application/common/LocaleHelper.php:69
+#: application/common/LocaleHelper.php:67
 msgid "Interlingue"
 msgstr "Interlingue"
 
-#: application/common/LocaleHelper.php:70
+#: application/common/LocaleHelper.php:68
 msgid "Inupiak"
 msgstr "Inupiak"
 
-#: application/common/LocaleHelper.php:71
+#: application/common/LocaleHelper.php:69
 msgid "Indonesian"
 msgstr "Indonesian"
 
-#: application/common/LocaleHelper.php:72
+#: application/common/LocaleHelper.php:70
 msgid "Icelandic"
 msgstr "Icelandic"
 
-#: application/common/LocaleHelper.php:73
+#: application/common/LocaleHelper.php:71
 msgid "Italian"
 msgstr "Italian"
 
-#: application/common/LocaleHelper.php:74
+#: application/common/LocaleHelper.php:72
 msgid "Hebrew"
 msgstr "Hebrew"
 
-#: application/common/LocaleHelper.php:75
+#: application/common/LocaleHelper.php:73
 msgid "Japanese"
 msgstr "Japanese"
 
-#: application/common/LocaleHelper.php:76
+#: application/common/LocaleHelper.php:74
 msgid "Yiddish"
 msgstr "Yiddish"
 
-#: application/common/LocaleHelper.php:77
+#: application/common/LocaleHelper.php:75
 msgid "Javanese"
 msgstr "Javanese"
 
-#: application/common/LocaleHelper.php:78
+#: application/common/LocaleHelper.php:76
 msgid "Georgian"
 msgstr "Georgian"
 
-#: application/common/LocaleHelper.php:79
+#: application/common/LocaleHelper.php:77
 msgid "Kazakh"
 msgstr "Kazakh"
 
-#: application/common/LocaleHelper.php:80
+#: application/common/LocaleHelper.php:78
 msgid "Greenlandic"
 msgstr "Greenlandic"
 
-#: application/common/LocaleHelper.php:81
+#: application/common/LocaleHelper.php:79
 msgid "Cambodian"
 msgstr "Cambodian"
 
-#: application/common/LocaleHelper.php:82
+#: application/common/LocaleHelper.php:80
 msgid "Kannada"
 msgstr "Kannada"
 
-#: application/common/LocaleHelper.php:83
+#: application/common/LocaleHelper.php:81
 msgid "Korean"
 msgstr "Korean"
 
-#: application/common/LocaleHelper.php:84
+#: application/common/LocaleHelper.php:82
 msgid "Kashmiri"
 msgstr "Kashmiri"
 
-#: application/common/LocaleHelper.php:85
+#: application/common/LocaleHelper.php:83
 msgid "Kurdish"
 msgstr "Kurdish"
 
-#: application/common/LocaleHelper.php:86
+#: application/common/LocaleHelper.php:84
 msgid "Kirghiz"
 msgstr "Kirghiz"
 
-#: application/common/LocaleHelper.php:87
+#: application/common/LocaleHelper.php:85
 msgid "Latin"
 msgstr "Latin"
 
-#: application/common/LocaleHelper.php:88
+#: application/common/LocaleHelper.php:86
 msgid "Lingala"
 msgstr "Lingala"
 
-#: application/common/LocaleHelper.php:89
+#: application/common/LocaleHelper.php:87
 msgid "Laothian"
 msgstr "Laothian"
 
-#: application/common/LocaleHelper.php:90
+#: application/common/LocaleHelper.php:88
 msgid "Lithuanian"
 msgstr "Lithuanian"
 
-#: application/common/LocaleHelper.php:91
+#: application/common/LocaleHelper.php:89
 msgid "Latvian/Lettish"
 msgstr "Latvian/Lettish"
 
-#: application/common/LocaleHelper.php:92
+#: application/common/LocaleHelper.php:90
 msgid "Malagasy"
 msgstr "Malagasy"
 
-#: application/common/LocaleHelper.php:93
+#: application/common/LocaleHelper.php:91
 msgid "Maori"
 msgstr "Maori"
 
-#: application/common/LocaleHelper.php:94
+#: application/common/LocaleHelper.php:92
 msgid "Macedonian"
 msgstr "Macedonian"
 
-#: application/common/LocaleHelper.php:95
+#: application/common/LocaleHelper.php:93
 msgid "Malayalam"
 msgstr "Malayalam"
 
-#: application/common/LocaleHelper.php:96
+#: application/common/LocaleHelper.php:94
 msgid "Mongolian"
 msgstr "Mongolian"
 
-#: application/common/LocaleHelper.php:97
+#: application/common/LocaleHelper.php:95
 msgid "Moldavian"
 msgstr "Moldavian"
 
-#: application/common/LocaleHelper.php:98
+#: application/common/LocaleHelper.php:96
 msgid "Marathi"
 msgstr "Marathi"
 
-#: application/common/LocaleHelper.php:99
+#: application/common/LocaleHelper.php:97
 msgid "Malay"
 msgstr "Malay"
 
-#: application/common/LocaleHelper.php:100
+#: application/common/LocaleHelper.php:98
 msgid "Maltese"
 msgstr "Maltese"
 
-#: application/common/LocaleHelper.php:101
+#: application/common/LocaleHelper.php:99
 msgid "Burmese"
 msgstr "Burmese"
 
-#: application/common/LocaleHelper.php:102
+#: application/common/LocaleHelper.php:100
 msgid "Nauru"
 msgstr "Nauru"
 
-#: application/common/LocaleHelper.php:103
+#: application/common/LocaleHelper.php:101
 msgid "Nepali"
 msgstr "Nepali"
 
-#: application/common/LocaleHelper.php:104
+#: application/common/LocaleHelper.php:102
 msgid "Dutch"
 msgstr "Dutch"
 
-#: application/common/LocaleHelper.php:105
+#: application/common/LocaleHelper.php:103
 msgid "Norwegian"
 msgstr "Norwegian"
 
-#: application/common/LocaleHelper.php:106
+#: application/common/LocaleHelper.php:104
 msgid "Occitan"
 msgstr "Occitan"
 
-#: application/common/LocaleHelper.php:107
+#: application/common/LocaleHelper.php:105
 msgid "(Afan)/Oromoor/Oriya"
 msgstr "(Afan)/Oromoor/Oriya"
 
-#: application/common/LocaleHelper.php:108
+#: application/common/LocaleHelper.php:106
 msgid "Punjabi"
 msgstr "Punjabi"
 
-#: application/common/LocaleHelper.php:109
+#: application/common/LocaleHelper.php:107
 msgid "Polish"
 msgstr "Polish"
 
-#: application/common/LocaleHelper.php:110
+#: application/common/LocaleHelper.php:108
 msgid "Pashto/Pushto"
 msgstr "Pashto/Pushto"
 
-#: application/common/LocaleHelper.php:111
+#: application/common/LocaleHelper.php:109
 msgid "Portuguese"
 msgstr "Portuguese"
 
-#: application/common/LocaleHelper.php:112
+#: application/common/LocaleHelper.php:110
 msgid "Quechua"
 msgstr "Quechua"
 
-#: application/common/LocaleHelper.php:113
+#: application/common/LocaleHelper.php:111
 msgid "Rhaeto-Romance"
 msgstr "Rhaeto-Romance"
 
-#: application/common/LocaleHelper.php:114
+#: application/common/LocaleHelper.php:112
 msgid "Kirundi"
 msgstr "Kirundi"
 
-#: application/common/LocaleHelper.php:115
+#: application/common/LocaleHelper.php:113
 msgid "Romanian"
 msgstr "Romanian"
 
-#: application/common/LocaleHelper.php:116
+#: application/common/LocaleHelper.php:114
 msgid "Russian"
 msgstr "Russian"
 
-#: application/common/LocaleHelper.php:117
+#: application/common/LocaleHelper.php:115
 msgid "Kinyarwanda"
 msgstr "Kinyarwanda"
 
-#: application/common/LocaleHelper.php:118
+#: application/common/LocaleHelper.php:116
 msgid "Sanskrit"
 msgstr "Sanskrit"
 
-#: application/common/LocaleHelper.php:119
+#: application/common/LocaleHelper.php:117
 msgid "Sindhi"
 msgstr "Sindhi"
 
-#: application/common/LocaleHelper.php:120
+#: application/common/LocaleHelper.php:118
 msgid "Sangro"
 msgstr "Sangro"
 
-#: application/common/LocaleHelper.php:121
+#: application/common/LocaleHelper.php:119
 msgid "Serbo-Croatian"
 msgstr "Serbo-Croatian"
 
-#: application/common/LocaleHelper.php:122
+#: application/common/LocaleHelper.php:120
 msgid "Singhalese"
 msgstr "Singhalese"
 
-#: application/common/LocaleHelper.php:123
+#: application/common/LocaleHelper.php:121
 msgid "Slovak"
 msgstr "Slovak"
 
-#: application/common/LocaleHelper.php:124
+#: application/common/LocaleHelper.php:122
 msgid "Slovenian"
 msgstr "Slovenian"
 
-#: application/common/LocaleHelper.php:125
+#: application/common/LocaleHelper.php:123
 msgid "Samoan"
 msgstr "Samoan"
 
-#: application/common/LocaleHelper.php:126
+#: application/common/LocaleHelper.php:124
 msgid "Shona"
 msgstr "Shona"
 
-#: application/common/LocaleHelper.php:127
+#: application/common/LocaleHelper.php:125
 msgid "Somali"
 msgstr "Somali"
 
-#: application/common/LocaleHelper.php:128
+#: application/common/LocaleHelper.php:126
 msgid "Albanian"
 msgstr "Albanian"
 
-#: application/common/LocaleHelper.php:129
+#: application/common/LocaleHelper.php:127
 msgid "Serbian"
 msgstr "Serbian"
 
-#: application/common/LocaleHelper.php:130
+#: application/common/LocaleHelper.php:128
 msgid "Siswati"
 msgstr "Siswati"
 
-#: application/common/LocaleHelper.php:131
+#: application/common/LocaleHelper.php:129
 msgid "Sesotho"
 msgstr "Sesotho"
 
-#: application/common/LocaleHelper.php:132
+#: application/common/LocaleHelper.php:130
 msgid "Sundanese"
 msgstr "Sundanese"
 
-#: application/common/LocaleHelper.php:133
+#: application/common/LocaleHelper.php:131
 msgid "Swedish"
 msgstr "Swedish"
 
-#: application/common/LocaleHelper.php:134
+#: application/common/LocaleHelper.php:132
 msgid "Swahili"
 msgstr "Swahili"
 
-#: application/common/LocaleHelper.php:135
+#: application/common/LocaleHelper.php:133
 msgid "Tamil"
 msgstr "Tamil"
 
-#: application/common/LocaleHelper.php:136
+#: application/common/LocaleHelper.php:134
 msgid "Tegulu"
 msgstr "Tegulu"
 
-#: application/common/LocaleHelper.php:137
+#: application/common/LocaleHelper.php:135
 msgid "Tajik"
 msgstr "Tajik"
 
-#: application/common/LocaleHelper.php:138
+#: application/common/LocaleHelper.php:136
 msgid "Thai"
 msgstr "Thai"
 
-#: application/common/LocaleHelper.php:139
+#: application/common/LocaleHelper.php:137
 msgid "Tigrinya"
 msgstr "Tigrinya"
 
-#: application/common/LocaleHelper.php:140
+#: application/common/LocaleHelper.php:138
 msgid "Turkmen"
 msgstr "Turkmen"
 
-#: application/common/LocaleHelper.php:141
+#: application/common/LocaleHelper.php:139
 msgid "Tagalog"
 msgstr "Tagalog"
 
-#: application/common/LocaleHelper.php:142
+#: application/common/LocaleHelper.php:140
 msgid "Setswana"
 msgstr "Setswana"
 
-#: application/common/LocaleHelper.php:143
+#: application/common/LocaleHelper.php:141
 msgid "Tonga"
 msgstr "Tonga"
 
-#: application/common/LocaleHelper.php:144
+#: application/common/LocaleHelper.php:142
 msgid "Turkish"
 msgstr "Turkish"
 
-#: application/common/LocaleHelper.php:145
+#: application/common/LocaleHelper.php:143
 msgid "Tsonga"
 msgstr "Tsonga"
 
-#: application/common/LocaleHelper.php:146
+#: application/common/LocaleHelper.php:144
 msgid "Tatar"
 msgstr "Tatar"
 
-#: application/common/LocaleHelper.php:147
+#: application/common/LocaleHelper.php:145
 msgid "Twi"
 msgstr "Twi"
 
-#: application/common/LocaleHelper.php:148
+#: application/common/LocaleHelper.php:146
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: application/common/LocaleHelper.php:149
+#: application/common/LocaleHelper.php:147
 msgid "Urdu"
 msgstr "Urdu"
 
-#: application/common/LocaleHelper.php:150
+#: application/common/LocaleHelper.php:148
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: application/common/LocaleHelper.php:151
+#: application/common/LocaleHelper.php:149
 msgid "Vietnamese"
 msgstr "Vietnamese"
 
-#: application/common/LocaleHelper.php:152
+#: application/common/LocaleHelper.php:150
 msgid "Volapuk"
 msgstr "Volapuk"
 
-#: application/common/LocaleHelper.php:153
+#: application/common/LocaleHelper.php:151
 msgid "Wolof"
 msgstr "Wolof"
 
-#: application/common/LocaleHelper.php:154
+#: application/common/LocaleHelper.php:152
 msgid "Xhosa"
 msgstr "Xhosa"
 
-#: application/common/LocaleHelper.php:155
+#: application/common/LocaleHelper.php:153
 msgid "Yoruba"
 msgstr "Yoruba"
 
-#: application/common/LocaleHelper.php:156
+#: application/common/LocaleHelper.php:154
 msgid "Chinese"
 msgstr "Chinese"
 
-#: application/common/LocaleHelper.php:157
+#: application/common/LocaleHelper.php:155
 msgid "Zulu"
 msgstr "Zulu"
 
@@ -631,183 +631,182 @@ msgstr "Kattintson a következő műsorra és válassza a „Sávok ütemezése�
 msgid "It looks like the next show is empty. %sAdd tracks to your show now%s."
 msgstr "Úgy tűnik az következő műsor üres. %sSávok hozzáadása a műsorhoz most%s."
 
-#: application/configs/config-check.php:175
+#: application/configs/config-check.php:167
 msgid "LibreTime media analyzer service"
 msgstr ""
 
-#: application/configs/config-check.php:182
+#: application/configs/config-check.php:174
 msgid "Check that the libretime-analyzer service is installed correctly in "
 msgstr ""
 
-#: application/configs/config-check.php:183
-#: application/configs/config-check.php:204
-#: application/configs/config-check.php:225
-#: application/configs/config-check.php:246
-#: application/configs/config-check.php:267
+#: application/configs/config-check.php:175
+#: application/configs/config-check.php:194
+#: application/configs/config-check.php:213
+#: application/configs/config-check.php:232
+#: application/configs/config-check.php:251
 msgid " and ensure that it's running with "
 msgstr ""
 
-#: application/configs/config-check.php:185
-#: application/configs/config-check.php:206
-#: application/configs/config-check.php:227
-#: application/configs/config-check.php:248
-#: application/configs/config-check.php:269
+#: application/configs/config-check.php:177
+#: application/configs/config-check.php:196
+#: application/configs/config-check.php:215
+#: application/configs/config-check.php:234
+#: application/configs/config-check.php:253
 msgid "If not, try "
 msgstr ""
 
-#: application/configs/config-check.php:196
+#: application/configs/config-check.php:187
 msgid "LibreTime playout service"
 msgstr ""
 
-#: application/configs/config-check.php:203
+#: application/configs/config-check.php:193
 msgid "Check that the libretime-playout service is installed correctly in "
 msgstr ""
 
-#: application/configs/config-check.php:217
+#: application/configs/config-check.php:205
 msgid "LibreTime liquidsoap service"
 msgstr ""
 
-#: application/configs/config-check.php:224
+#: application/configs/config-check.php:212
 msgid "Check that the libretime-liquidsoap service is installed correctly in "
 msgstr ""
 
-#: application/configs/config-check.php:238
+#: application/configs/config-check.php:224
 msgid "LibreTime Celery Task service"
 msgstr ""
 
-#: application/configs/config-check.php:245
-msgid "Check that the libretime-celery service is installed correctly in "
+#: application/configs/config-check.php:231
+msgid "Check that the libretime-worker service is installed correctly in "
 msgstr ""
 
-#: application/configs/config-check.php:259
+#: application/configs/config-check.php:243
 msgid "LibreTime API service"
 msgstr ""
 
-#: application/configs/config-check.php:266
+#: application/configs/config-check.php:250
 msgid "Check that the libretime-api service is installed correctly in "
 msgstr ""
 
-#: application/configs/navigation.php:27
+#: application/configs/navigation.php:28
 msgid "Radio Page"
 msgstr "Rádióoldal"
 
-#: application/configs/navigation.php:35
+#: application/configs/navigation.php:36
 msgid "Calendar"
 msgstr "Naptár"
 
-#: application/configs/navigation.php:43
+#: application/configs/navigation.php:44
 msgid "Widgets"
 msgstr "Felületi elemek"
 
-#: application/configs/navigation.php:52
+#: application/configs/navigation.php:53
 msgid "Player"
 msgstr "Lejátszó"
 
-#: application/configs/navigation.php:58
+#: application/configs/navigation.php:59
 msgid "Weekly Schedule"
 msgstr "Heti ütemterv"
 
-#: application/configs/navigation.php:66
+#: application/configs/navigation.php:67
 msgid "Settings"
 msgstr "Beállítások"
 
-#: application/configs/navigation.php:74
+#: application/configs/navigation.php:75
 msgid "General"
 msgstr "Általános"
 
-#: application/configs/navigation.php:80
+#: application/configs/navigation.php:81
 msgid "My Profile"
 msgstr "Profilom"
 
-#: application/configs/navigation.php:85
+#: application/configs/navigation.php:86
 msgid "Users"
 msgstr "Felhasználók"
 
-#: application/configs/navigation.php:91
+#: application/configs/navigation.php:92
 msgid "Track Types"
 msgstr ""
 
-#: application/configs/navigation.php:98
+#: application/configs/navigation.php:99
 msgid "Streams"
 msgstr "Adásfolyamok"
 
-#: application/configs/navigation.php:105
+#: application/configs/navigation.php:106
 #: application/controllers/LocaleController.php:382
-#: application/controllers/LocaleController.php:383
 msgid "Status"
 msgstr "Állapot"
 
-#: application/configs/navigation.php:114
+#: application/configs/navigation.php:115
 msgid "Analytics"
 msgstr "Elemzések"
 
-#: application/configs/navigation.php:123
+#: application/configs/navigation.php:124
 msgid "Playout History"
 msgstr "Lejátszási előzmények"
 
-#: application/configs/navigation.php:130
+#: application/configs/navigation.php:131
 msgid "History Templates"
 msgstr "Naplózási sablonok"
 
-#: application/configs/navigation.php:137
+#: application/configs/navigation.php:138
 msgid "Listener Stats"
 msgstr "Hallgatói statisztikák"
 
-#: application/configs/navigation.php:144
+#: application/configs/navigation.php:145
 msgid "Show Listener Stats"
 msgstr ""
 
-#: application/configs/navigation.php:153
+#: application/configs/navigation.php:154
 msgid "Help"
 msgstr "Segítség"
 
-#: application/configs/navigation.php:161
+#: application/configs/navigation.php:162
 msgid "Getting Started"
 msgstr "Első lépések"
 
-#: application/configs/navigation.php:168
+#: application/configs/navigation.php:169
 msgid "User Manual"
 msgstr "Felhasználói kézikönyv"
 
-#: application/configs/navigation.php:173
+#: application/configs/navigation.php:174
 msgid "Get Help Online"
 msgstr ""
 
-#: application/configs/navigation.php:178
+#: application/configs/navigation.php:179
 msgid "Contribute to LibreTime"
 msgstr ""
 
-#: application/configs/navigation.php:183
+#: application/configs/navigation.php:184
 msgid "What's New?"
 msgstr "Újdonságok"
 
-#: application/controllers/ApiController.php:112
-#: application/controllers/ApiController.php:746
+#: application/controllers/ApiController.php:113
+#: application/controllers/ApiController.php:750
 msgid "You are not allowed to access this resource."
 msgstr "Az Ön számára nem érhető el az alábbi erőforrás."
 
-#: application/controllers/ApiController.php:374
-#: application/controllers/ApiController.php:450
-#: application/controllers/ApiController.php:519
-#: application/controllers/ApiController.php:574
-#: application/controllers/ApiController.php:662
-#: application/controllers/ApiController.php:679
-#: application/controllers/ApiController.php:712
+#: application/controllers/ApiController.php:380
+#: application/controllers/ApiController.php:456
+#: application/controllers/ApiController.php:525
+#: application/controllers/ApiController.php:580
+#: application/controllers/ApiController.php:668
+#: application/controllers/ApiController.php:685
+#: application/controllers/ApiController.php:716
 msgid "You are not allowed to access this resource. "
 msgstr "Az Ön számára nem érhető el az alábbi erőforrás."
 
-#: application/controllers/ApiController.php:916
-#: application/controllers/ApiController.php:937
-#: application/controllers/ApiController.php:949
+#: application/controllers/ApiController.php:920
+#: application/controllers/ApiController.php:941
+#: application/controllers/ApiController.php:953
 #, php-format
 msgid "File does not exist in %s"
 msgstr "A fájl nem elérhető itt: %s"
 
-#: application/controllers/ApiController.php:1003
+#: application/controllers/ApiController.php:1007
 msgid "Bad request. no 'mode' parameter passed."
 msgstr "Helytelen kérés. nincs 'mód' paraméter lett átadva."
 
-#: application/controllers/ApiController.php:1015
+#: application/controllers/ApiController.php:1020
 msgid "Bad request. 'mode' parameter is invalid"
 msgstr "Helytelen kérés. 'mód' paraméter érvénytelen."
 
@@ -825,7 +824,7 @@ msgstr "Nem csatlakozik forrás az alábbi bemenethez."
 msgid "You don't have permission to switch source."
 msgstr "Nincs jogosultsága a forrás megváltoztatásához."
 
-#: application/controllers/EmbeddablewidgetsController.php:26
+#: application/controllers/EmbeddablewidgetsController.php:24
 msgid ""
 "To configure and use the embeddable player you must:<br><br>\n"
 "            1. Enable at least one MP3, AAC, or OGG stream under Settings -> Streams<br>\n"
@@ -835,7 +834,7 @@ msgstr ""
 "1. Engedélyezni kell legalább egy MP3, AAC, vagy OGG adásfolyamot a „Beállítások -> Adásfolyamok” alatt<br>\n"
 "2. Engedélyezni kell a Public LibreTime API-t a „Beállítások -> Tulajdonságok” alatt"
 
-#: application/controllers/EmbeddablewidgetsController.php:39
+#: application/controllers/EmbeddablewidgetsController.php:37
 msgid ""
 "To use the embeddable weekly schedule widget you must:<br><br>\n"
 "            Enable the Public LibreTime API under Settings -> Preferences"
@@ -843,7 +842,7 @@ msgstr ""
 "A beágyazható heti ütemezés felületi elem használatához a következőt kell tenni:<br><br>\n"
 "Engedélyezni kell a Public LibreTime API-t a Beállítások -> Tulajdonságok alatt"
 
-#: application/controllers/EmbeddablewidgetsController.php:52
+#: application/controllers/EmbeddablewidgetsController.php:50
 msgid ""
 "To add the Radio Tab to your Facebook Page, you must first:<br><br>\n"
 "            Enable the Public LibreTime API under Settings -> Preferences"
@@ -851,19 +850,19 @@ msgstr ""
 "A Rádió fül Facebook Oldalba illesztéséhez először a következőt kell tenni:<br><br>\n"
 "Engedélyezni kell a Public LibreTime API-t a Beállítások -> Tulajdonságok alatt"
 
-#: application/controllers/ErrorController.php:96
+#: application/controllers/ErrorController.php:94
 msgid "Page not found."
 msgstr "Oldal nem található."
 
-#: application/controllers/ErrorController.php:106
+#: application/controllers/ErrorController.php:104
 msgid "The requested action is not supported."
 msgstr "A kiválasztott művelet nem támogatott."
 
-#: application/controllers/ErrorController.php:116
+#: application/controllers/ErrorController.php:114
 msgid "You do not have permission to access this resource."
 msgstr "Nincs jogosultsága ennek a forrásnak az eléréséhez."
 
-#: application/controllers/ErrorController.php:127
+#: application/controllers/ErrorController.php:125
 msgid "An internal application error has occurred."
 msgstr "Belső alkalmazáshiba történt."
 
@@ -889,14 +888,14 @@ msgstr "Valami hiba történt."
 
 #: application/controllers/LibraryController.php:91
 #: application/controllers/LocaleController.php:171
-#: application/controllers/ShowbuilderController.php:135
-#: application/forms/SmartBlockCriteria.php:563
+#: application/controllers/ShowbuilderController.php:131
+#: application/forms/SmartBlockCriteria.php:573
 msgid "Preview"
 msgstr "Előnézet"
 
 #: application/controllers/LibraryController.php:111
-#: application/controllers/LibraryController.php:143
-#: application/controllers/LibraryController.php:166
+#: application/controllers/LibraryController.php:139
+#: application/controllers/LibraryController.php:162
 msgid "Add to Playlist"
 msgstr "Hozzáadás lejátszási listához"
 
@@ -905,58 +904,58 @@ msgid "Add to Smart Block"
 msgstr "Hozzáadás Okosblokkhoz"
 
 #: application/controllers/LibraryController.php:118
-#: application/controllers/LibraryController.php:155
-#: application/controllers/LibraryController.php:174
+#: application/controllers/LibraryController.php:151
+#: application/controllers/LibraryController.php:170
 #: application/controllers/LocaleController.php:75
-#: application/controllers/ShowbuilderController.php:142
-#: application/services/CalendarService.php:183
-#: application/services/CalendarService.php:200
-#: application/services/CalendarService.php:205
+#: application/controllers/ShowbuilderController.php:138
+#: application/services/CalendarService.php:192
+#: application/services/CalendarService.php:212
+#: application/services/CalendarService.php:218
 msgid "Delete"
 msgstr "Törlés"
 
 #: application/controllers/LibraryController.php:119
-#: application/controllers/LibraryController.php:150
-#: application/controllers/LibraryController.php:172
+#: application/controllers/LibraryController.php:146
+#: application/controllers/LibraryController.php:168
 msgid "Edit..."
 msgstr "Szerkesztés..."
 
-#: application/controllers/LibraryController.php:130
-#: application/controllers/ScheduleController.php:735
+#: application/controllers/LibraryController.php:126
+#: application/controllers/ScheduleController.php:732
 msgid "Download"
 msgstr "Letöltés"
 
-#: application/controllers/LibraryController.php:134
+#: application/controllers/LibraryController.php:130
 msgid "Duplicate Playlist"
 msgstr "Lejátszási lista duplikálása"
 
-#: application/controllers/LibraryController.php:137
+#: application/controllers/LibraryController.php:133
 msgid "Duplicate Smartblock"
 msgstr ""
 
-#: application/controllers/LibraryController.php:179
+#: application/controllers/LibraryController.php:175
 msgid "No action available"
 msgstr "Nincs elérhető művelet"
 
-#: application/controllers/LibraryController.php:199
+#: application/controllers/LibraryController.php:195
 msgid "You don't have permission to delete selected items."
 msgstr "Nincs engedélye, hogy törölje a kiválasztott elemeket."
 
-#: application/controllers/LibraryController.php:244
+#: application/controllers/LibraryController.php:240
 msgid "Could not delete file because it is scheduled in the future."
 msgstr "Nem lehet törölni a fájlt mert ütemezve van egy későbbi időpontra."
 
-#: application/controllers/LibraryController.php:247
+#: application/controllers/LibraryController.php:243
 msgid "Could not delete file(s)."
 msgstr "Nem lehet törölni a fájlokat."
 
-#: application/controllers/LibraryController.php:289
-#: application/controllers/LibraryController.php:324
+#: application/controllers/LibraryController.php:285
+#: application/controllers/LibraryController.php:320
 #, php-format
 msgid "Copy of %s"
 msgstr "%s másolata"
 
-#: application/controllers/ListenerstatController.php:50
+#: application/controllers/ListenerstatController.php:46
 msgid "Please make sure admin user/password is correct on Settings->Streams page."
 msgstr "Kérjük győződjön meg róla, hogy megfelelő adminisztrátori felhasználónév és jelszó van megadva a Rendszer -> Adásfolyamok oldalon."
 
@@ -1103,7 +1102,7 @@ msgid "New"
 msgstr ""
 
 #: application/controllers/LocaleController.php:70
-#: application/services/CalendarService.php:147
+#: application/services/CalendarService.php:155
 msgid "Edit"
 msgstr "Szerkeszt"
 
@@ -1176,7 +1175,7 @@ msgstr "Lejátszási lista"
 
 #: application/controllers/LocaleController.php:88
 #: application/forms/SmartBlockCriteria.php:81
-#: application/models/Block.php:1450 application/models/Block.php:1546
+#: application/models/Block.php:1458 application/models/Block.php:1556
 #: application/services/HistoryService.php:1051
 #: application/services/HistoryService.php:1086
 #: application/services/HistoryService.php:1101
@@ -1185,7 +1184,7 @@ msgstr "Cím"
 
 #: application/controllers/LocaleController.php:89
 #: application/forms/SmartBlockCriteria.php:66
-#: application/models/Block.php:1434 application/models/Block.php:1530
+#: application/models/Block.php:1442 application/models/Block.php:1540
 #: application/services/HistoryService.php:1052
 #: application/services/HistoryService.php:1087
 #: application/services/HistoryService.php:1102
@@ -1194,7 +1193,7 @@ msgstr "Előadó/Szerző"
 
 #: application/controllers/LocaleController.php:90
 #: application/forms/SmartBlockCriteria.php:57
-#: application/models/Block.php:1425 application/models/Block.php:1521
+#: application/models/Block.php:1433 application/models/Block.php:1531
 #: application/services/HistoryService.php:1053
 msgid "Album"
 msgstr "Album"
@@ -1205,13 +1204,13 @@ msgstr "Bitráta"
 
 #: application/controllers/LocaleController.php:92
 #: application/forms/SmartBlockCriteria.php:59
-#: application/models/Block.php:1427 application/models/Block.php:1523
+#: application/models/Block.php:1435 application/models/Block.php:1533
 msgid "BPM"
 msgstr "BPM"
 
 #: application/controllers/LocaleController.php:93
 #: application/forms/SmartBlockCriteria.php:60
-#: application/models/Block.php:1428 application/models/Block.php:1524
+#: application/models/Block.php:1436 application/models/Block.php:1534
 #: application/services/HistoryService.php:1058
 #: application/services/HistoryService.php:1105
 msgid "Composer"
@@ -1219,14 +1218,14 @@ msgstr "Zeneszerző"
 
 #: application/controllers/LocaleController.php:94
 #: application/forms/SmartBlockCriteria.php:61
-#: application/models/Block.php:1429 application/models/Block.php:1525
+#: application/models/Block.php:1437 application/models/Block.php:1535
 #: application/services/HistoryService.php:1063
 msgid "Conductor"
 msgstr "Karmester"
 
 #: application/controllers/LocaleController.php:95
 #: application/forms/SmartBlockCriteria.php:62
-#: application/models/Block.php:1430 application/models/Block.php:1526
+#: application/models/Block.php:1438 application/models/Block.php:1536
 #: application/services/HistoryService.php:1060
 #: application/services/HistoryService.php:1106
 msgid "Copyright"
@@ -1234,54 +1233,54 @@ msgstr "Szerzői jog"
 
 #: application/controllers/LocaleController.php:96
 #: application/forms/SmartBlockCriteria.php:67
-#: application/models/Block.php:1435 application/models/Block.php:1531
+#: application/models/Block.php:1443 application/models/Block.php:1541
 msgid "Encoded By"
 msgstr "Kódolva"
 
 #: application/controllers/LocaleController.php:97
 #: application/forms/SmartBlockCriteria.php:68
-#: application/forms/StreamSettingSubForm.php:127
-#: application/models/Block.php:1436 application/models/Block.php:1532
+#: application/forms/StreamSettingSubForm.php:118
+#: application/models/Block.php:1444 application/models/Block.php:1542
 #: application/services/HistoryService.php:1055
 msgid "Genre"
 msgstr "Műfaj"
 
 #: application/controllers/LocaleController.php:98
 #: application/forms/SmartBlockCriteria.php:69
-#: application/models/Block.php:1437 application/models/Block.php:1533
+#: application/models/Block.php:1445 application/models/Block.php:1543
 #: application/services/HistoryService.php:1059
 msgid "ISRC"
 msgstr "ISRC"
 
 #: application/controllers/LocaleController.php:99
 #: application/forms/SmartBlockCriteria.php:70
-#: application/models/Block.php:1438 application/models/Block.php:1534
+#: application/models/Block.php:1446 application/models/Block.php:1544
 #: application/services/HistoryService.php:1057
 msgid "Label"
 msgstr "Címke"
 
 #: application/controllers/LocaleController.php:100
 #: application/forms/SmartBlockCriteria.php:71
-#: application/models/Block.php:1439 application/models/Block.php:1535
+#: application/models/Block.php:1447 application/models/Block.php:1545
 #: application/services/HistoryService.php:1064
 msgid "Language"
 msgstr "Nyelv"
 
 #: application/controllers/LocaleController.php:101
 #: application/forms/SmartBlockCriteria.php:72
-#: application/models/Block.php:1441 application/models/Block.php:1537
+#: application/models/Block.php:1449 application/models/Block.php:1547
 msgid "Last Modified"
 msgstr "Utoljára módosítva"
 
 #: application/controllers/LocaleController.php:102
 #: application/forms/SmartBlockCriteria.php:73
-#: application/models/Block.php:1442 application/models/Block.php:1538
+#: application/models/Block.php:1450 application/models/Block.php:1548
 msgid "Last Played"
 msgstr "Utoljára játszott"
 
 #: application/controllers/LocaleController.php:103
 #: application/forms/SmartBlockCriteria.php:74
-#: application/models/Block.php:1443 application/models/Block.php:1539
+#: application/models/Block.php:1451 application/models/Block.php:1549
 #: application/services/HistoryService.php:1054
 #: application/services/HistoryService.php:1104
 msgid "Length"
@@ -1289,26 +1288,26 @@ msgstr "Hossz"
 
 #: application/controllers/LocaleController.php:104
 #: application/forms/SmartBlockCriteria.php:76
-#: application/models/Block.php:1445 application/models/Block.php:1541
+#: application/models/Block.php:1453 application/models/Block.php:1551
 msgid "Mime"
 msgstr "Mime típus"
 
 #: application/controllers/LocaleController.php:105
 #: application/forms/SmartBlockCriteria.php:77
-#: application/models/Block.php:1446 application/models/Block.php:1542
+#: application/models/Block.php:1454 application/models/Block.php:1552
 #: application/services/HistoryService.php:1056
 msgid "Mood"
 msgstr "Hangulat"
 
 #: application/controllers/LocaleController.php:106
 #: application/forms/SmartBlockCriteria.php:78
-#: application/models/Block.php:1447 application/models/Block.php:1543
+#: application/models/Block.php:1455 application/models/Block.php:1553
 msgid "Owner"
 msgstr "Tulajdonos"
 
 #: application/controllers/LocaleController.php:107
 #: application/forms/SmartBlockCriteria.php:79
-#: application/models/Block.php:1448 application/models/Block.php:1544
+#: application/models/Block.php:1456 application/models/Block.php:1554
 msgid "Replay Gain"
 msgstr "Replay Gain"
 
@@ -1318,25 +1317,25 @@ msgstr "Mintavétel"
 
 #: application/controllers/LocaleController.php:109
 #: application/forms/SmartBlockCriteria.php:82
-#: application/models/Block.php:1451 application/models/Block.php:1547
+#: application/models/Block.php:1459 application/models/Block.php:1557
 msgid "Track Number"
 msgstr "Sáv sorszáma"
 
 #: application/controllers/LocaleController.php:110
 #: application/forms/SmartBlockCriteria.php:83
-#: application/models/Block.php:1452 application/models/Block.php:1548
+#: application/models/Block.php:1460 application/models/Block.php:1558
 msgid "Uploaded"
 msgstr "Feltöltve"
 
 #: application/controllers/LocaleController.php:111
 #: application/forms/SmartBlockCriteria.php:84
-#: application/models/Block.php:1453 application/models/Block.php:1549
+#: application/models/Block.php:1461 application/models/Block.php:1559
 msgid "Website"
 msgstr "Honlap"
 
 #: application/controllers/LocaleController.php:112
 #: application/forms/SmartBlockCriteria.php:85
-#: application/models/Block.php:1454 application/models/Block.php:1550
+#: application/models/Block.php:1462 application/models/Block.php:1560
 #: application/services/HistoryService.php:1061
 msgid "Year"
 msgstr "Év"
@@ -1346,7 +1345,7 @@ msgid "Loading..."
 msgstr "Betöltés..."
 
 #: application/controllers/LocaleController.php:114
-#: application/controllers/LocaleController.php:411
+#: application/controllers/LocaleController.php:414
 msgid "All"
 msgstr "Összes"
 
@@ -1394,8 +1393,8 @@ msgid "Imported?"
 msgstr ""
 
 #: application/controllers/LocaleController.php:126
-#: application/services/CalendarService.php:59
-#: application/services/CalendarService.php:89
+#: application/services/CalendarService.php:61
+#: application/services/CalendarService.php:93
 msgid "View"
 msgstr "Megtekintés"
 
@@ -1526,21 +1525,21 @@ msgstr "Feldolgozás..."
 #: application/forms/SmartBlockCriteria.php:133
 #: application/forms/SmartBlockCriteria.php:198
 #: application/forms/SmartBlockCriteria.php:377
-#: application/forms/SmartBlockCriteria.php:619
-#: application/forms/SmartBlockCriteria.php:676
-#: application/models/Block.php:1458 application/models/Block.php:1554
+#: application/forms/SmartBlockCriteria.php:631
+#: application/forms/SmartBlockCriteria.php:688
+#: application/models/Block.php:1466 application/models/Block.php:1564
 msgid "Select modifier"
 msgstr "Módosító választása"
 
 #: application/controllers/LocaleController.php:162
 #: application/forms/SmartBlockCriteria.php:101
-#: application/models/Block.php:1459 application/models/Block.php:1555
+#: application/models/Block.php:1467 application/models/Block.php:1565
 msgid "contains"
 msgstr "tartalmazza"
 
 #: application/controllers/LocaleController.php:163
 #: application/forms/SmartBlockCriteria.php:102
-#: application/models/Block.php:1460 application/models/Block.php:1556
+#: application/models/Block.php:1468 application/models/Block.php:1566
 msgid "does not contain"
 msgstr "nem tartalmazza"
 
@@ -1549,8 +1548,8 @@ msgstr "nem tartalmazza"
 #: application/forms/SmartBlockCriteria.php:118
 #: application/forms/SmartBlockCriteria.php:137
 #: application/forms/SmartBlockCriteria.php:199
-#: application/models/Block.php:1461 application/models/Block.php:1468
-#: application/models/Block.php:1557 application/models/Block.php:1564
+#: application/models/Block.php:1469 application/models/Block.php:1476
+#: application/models/Block.php:1567 application/models/Block.php:1574
 msgid "is"
 msgstr "pontosan"
 
@@ -1559,46 +1558,46 @@ msgstr "pontosan"
 #: application/forms/SmartBlockCriteria.php:119
 #: application/forms/SmartBlockCriteria.php:138
 #: application/forms/SmartBlockCriteria.php:200
-#: application/models/Block.php:1462 application/models/Block.php:1469
-#: application/models/Block.php:1558 application/models/Block.php:1565
+#: application/models/Block.php:1470 application/models/Block.php:1477
+#: application/models/Block.php:1568 application/models/Block.php:1575
 msgid "is not"
 msgstr "nem"
 
 #: application/controllers/LocaleController.php:166
 #: application/forms/SmartBlockCriteria.php:105
-#: application/models/Block.php:1463 application/models/Block.php:1559
+#: application/models/Block.php:1471 application/models/Block.php:1569
 msgid "starts with"
 msgstr "kezdődik"
 
 #: application/controllers/LocaleController.php:167
 #: application/forms/SmartBlockCriteria.php:106
-#: application/models/Block.php:1464 application/models/Block.php:1560
+#: application/models/Block.php:1472 application/models/Block.php:1570
 msgid "ends with"
 msgstr "végződik"
 
 #: application/controllers/LocaleController.php:168
 #: application/forms/SmartBlockCriteria.php:120
 #: application/forms/SmartBlockCriteria.php:139
-#: application/models/Block.php:1470 application/models/Block.php:1566
+#: application/models/Block.php:1478 application/models/Block.php:1576
 msgid "is greater than"
 msgstr "nagyobb, mint"
 
 #: application/controllers/LocaleController.php:169
 #: application/forms/SmartBlockCriteria.php:121
 #: application/forms/SmartBlockCriteria.php:140
-#: application/models/Block.php:1471 application/models/Block.php:1567
+#: application/models/Block.php:1479 application/models/Block.php:1577
 msgid "is less than"
 msgstr "kisebb, mint"
 
 #: application/controllers/LocaleController.php:170
 #: application/forms/SmartBlockCriteria.php:122
 #: application/forms/SmartBlockCriteria.php:141
-#: application/models/Block.php:1472 application/models/Block.php:1568
+#: application/models/Block.php:1480 application/models/Block.php:1578
 msgid "is in the range"
 msgstr "tartománya"
 
 #: application/controllers/LocaleController.php:172
-#: application/forms/SmartBlockCriteria.php:565
+#: application/forms/SmartBlockCriteria.php:575
 msgid "Generate"
 msgstr "Létrehozás"
 
@@ -1644,7 +1643,7 @@ msgid "The stream is disabled"
 msgstr "Az adásfolyam ki van kapcsolva"
 
 #: application/controllers/LocaleController.php:184
-#: application/forms/StreamSettingSubForm.php:191
+#: application/forms/StreamSettingSubForm.php:146
 msgid "Getting information from the server..."
 msgstr "Információk lekérdezése a kiszolgálóról..."
 
@@ -1878,37 +1877,37 @@ msgid "Month"
 msgstr "Hónap"
 
 #: application/controllers/LocaleController.php:253
-#: application/forms/GeneralPreferences.php:232
+#: application/forms/GeneralPreferences.php:237
 msgid "Sunday"
 msgstr "Vasárnap"
 
 #: application/controllers/LocaleController.php:254
-#: application/forms/GeneralPreferences.php:233
+#: application/forms/GeneralPreferences.php:238
 msgid "Monday"
 msgstr "Hétfő"
 
 #: application/controllers/LocaleController.php:255
-#: application/forms/GeneralPreferences.php:234
+#: application/forms/GeneralPreferences.php:239
 msgid "Tuesday"
 msgstr "Kedd"
 
 #: application/controllers/LocaleController.php:256
-#: application/forms/GeneralPreferences.php:235
+#: application/forms/GeneralPreferences.php:240
 msgid "Wednesday"
 msgstr "Szerda"
 
 #: application/controllers/LocaleController.php:257
-#: application/forms/GeneralPreferences.php:236
+#: application/forms/GeneralPreferences.php:241
 msgid "Thursday"
 msgstr "Csütörtök"
 
 #: application/controllers/LocaleController.php:258
-#: application/forms/GeneralPreferences.php:237
+#: application/forms/GeneralPreferences.php:242
 msgid "Friday"
 msgstr "Péntek"
 
 #: application/controllers/LocaleController.php:259
-#: application/forms/GeneralPreferences.php:238
+#: application/forms/GeneralPreferences.php:243
 msgid "Saturday"
 msgstr "Szombat"
 
@@ -2006,13 +2005,13 @@ msgstr "A megadott időszakban nincsenek ütemezett műsorok."
 
 #: application/controllers/LocaleController.php:289
 #: application/forms/SmartBlockCriteria.php:63
-#: application/models/Block.php:1431 application/models/Block.php:1527
+#: application/models/Block.php:1439 application/models/Block.php:1537
 msgid "Cue In"
 msgstr "Felkeverés"
 
 #: application/controllers/LocaleController.php:290
 #: application/forms/SmartBlockCriteria.php:64
-#: application/models/Block.php:1432 application/models/Block.php:1528
+#: application/models/Block.php:1440 application/models/Block.php:1538
 msgid "Cue Out"
 msgstr "Lekeverés"
 
@@ -2052,7 +2051,7 @@ msgstr "%s elem áthelyezése"
 #: application/controllers/LocaleController.php:302
 #: application/forms/AddTracktype.php:59 application/forms/AddUser.php:108
 #: application/forms/EditAudioMD.php:280 application/forms/EditHistory.php:131
-#: application/forms/PasswordChange.php:41 application/forms/Preferences.php:37
+#: application/forms/PasswordChange.php:43 application/forms/Preferences.php:35
 msgid "Save"
 msgstr "Mentés"
 
@@ -2285,7 +2284,7 @@ msgid "Sa"
 msgstr "Szo"
 
 #: application/controllers/LocaleController.php:372
-#: application/controllers/LocaleController.php:400
+#: application/controllers/LocaleController.php:403
 msgid "Close"
 msgstr "Bezárás"
 
@@ -2306,9 +2305,16 @@ msgid "Select files"
 msgstr "Fájlok kiválasztása"
 
 #: application/controllers/LocaleController.php:380
-#: application/controllers/LocaleController.php:381
 msgid "Add files to the upload queue and click the start button."
 msgstr "Adjon fájlokat a feltöltési sorhoz, majd kattintson az „Indítás” gombra."
+
+#: application/controllers/LocaleController.php:381
+msgid "Filename"
+msgstr ""
+
+#: application/controllers/LocaleController.php:383
+msgid "Size"
+msgstr ""
 
 #: application/controllers/LocaleController.php:384
 msgid "Add Files"
@@ -2323,403 +2329,415 @@ msgid "Start upload"
 msgstr "Feltöltés indítása"
 
 #: application/controllers/LocaleController.php:387
+msgid "Start Upload"
+msgstr ""
+
+#: application/controllers/LocaleController.php:388
 msgid "Add files"
 msgstr "Fájlok hozzáadása"
 
-#: application/controllers/LocaleController.php:388
+#: application/controllers/LocaleController.php:389
+msgid "Stop current upload"
+msgstr ""
+
+#: application/controllers/LocaleController.php:390
+msgid "Start uploading queue"
+msgstr ""
+
+#: application/controllers/LocaleController.php:391
 #, php-format
 msgid "Uploaded %d/%d files"
 msgstr "Feltöltve %d/%d fájl"
 
-#: application/controllers/LocaleController.php:389
+#: application/controllers/LocaleController.php:392
 #, fuzzy
 msgid "N/A"
 msgstr "N/A"
 
-#: application/controllers/LocaleController.php:390
+#: application/controllers/LocaleController.php:393
 msgid "Drag files here."
 msgstr "Húzza a fájlokat ide."
 
-#: application/controllers/LocaleController.php:391
+#: application/controllers/LocaleController.php:394
 msgid "File extension error."
 msgstr "Fájlkiterjesztési hiba."
 
-#: application/controllers/LocaleController.php:392
+#: application/controllers/LocaleController.php:395
 msgid "File size error."
 msgstr "Fájlméret hiba."
 
-#: application/controllers/LocaleController.php:393
+#: application/controllers/LocaleController.php:396
 #, fuzzy
 msgid "File count error."
 msgstr "Fájl számi hiba."
 
-#: application/controllers/LocaleController.php:394
+#: application/controllers/LocaleController.php:397
 msgid "Init error."
 msgstr "Inicializálási hiba."
 
-#: application/controllers/LocaleController.php:395
+#: application/controllers/LocaleController.php:398
 msgid "HTTP Error."
 msgstr "HTTP Hiba."
 
-#: application/controllers/LocaleController.php:396
+#: application/controllers/LocaleController.php:399
 msgid "Security error."
 msgstr "Biztonsági hiba."
 
-#: application/controllers/LocaleController.php:397
+#: application/controllers/LocaleController.php:400
 msgid "Generic error."
 msgstr "Általános hiba."
 
-#: application/controllers/LocaleController.php:398
+#: application/controllers/LocaleController.php:401
 msgid "IO error."
 msgstr "IO hiba."
 
-#: application/controllers/LocaleController.php:399
+#: application/controllers/LocaleController.php:402
 #, php-format
 msgid "File: %s"
 msgstr "Fájl: %s"
 
-#: application/controllers/LocaleController.php:401
+#: application/controllers/LocaleController.php:404
 #, php-format
 msgid "%d files queued"
 msgstr "%d várakozó fájl"
 
-#: application/controllers/LocaleController.php:402
+#: application/controllers/LocaleController.php:405
 msgid "File: %f, size: %s, max file size: %m"
 msgstr "Fájl: %f,méret: %s, legnagyobb fájlméret: %m"
 
-#: application/controllers/LocaleController.php:403
+#: application/controllers/LocaleController.php:406
 msgid "Upload URL might be wrong or doesn't exist"
 msgstr "A feltöltés URL-je rossz vagy nem létezik"
 
-#: application/controllers/LocaleController.php:404
+#: application/controllers/LocaleController.php:407
 msgid "Error: File too large: "
 msgstr "Hiba: A fájl túl nagy:"
 
-#: application/controllers/LocaleController.php:405
+#: application/controllers/LocaleController.php:408
 msgid "Error: Invalid file extension: "
 msgstr "Hiba: Érvénytelen fájl kiterjesztés:"
 
-#: application/controllers/LocaleController.php:407
+#: application/controllers/LocaleController.php:410
 msgid "Set Default"
 msgstr "Alapértelmezés beállítása"
 
-#: application/controllers/LocaleController.php:408
+#: application/controllers/LocaleController.php:411
 msgid "Create Entry"
 msgstr "Bejegyzés létrehozása"
 
-#: application/controllers/LocaleController.php:409
+#: application/controllers/LocaleController.php:412
 msgid "Edit History Record"
 msgstr "Előzmények szerkesztése"
 
-#: application/controllers/LocaleController.php:410
+#: application/controllers/LocaleController.php:413
 #: application/forms/EditHistoryItem.php:57
 msgid "No Show"
 msgstr "Nincs műsor"
 
-#: application/controllers/LocaleController.php:412
+#: application/controllers/LocaleController.php:415
 #, php-format
 msgid "Copied %s row%s to the clipboard"
 msgstr "%s sor%s másolva a vágólapra"
 
-#: application/controllers/LocaleController.php:413
+#: application/controllers/LocaleController.php:416
 #, php-format
 msgid "%sPrint view%sPlease use your browser's print function to print this table. Press escape when finished."
 msgstr "%sNyomtatási előnézet%sKérjük, használja böngészője nyomtatási beállításait. Nyomja meg az Esc-t ha végzett."
 
-#: application/controllers/LocaleController.php:414
+#: application/controllers/LocaleController.php:417
 msgid "New Show"
 msgstr "Új műsor"
 
-#: application/controllers/LocaleController.php:415
+#: application/controllers/LocaleController.php:418
 msgid "New Log Entry"
 msgstr "Új naplóbejegyzés"
 
-#: application/controllers/LocaleController.php:417
+#: application/controllers/LocaleController.php:420
 msgid "No data available in table"
 msgstr ""
 
-#: application/controllers/LocaleController.php:418
+#: application/controllers/LocaleController.php:421
 msgid "(filtered from _MAX_ total entries)"
 msgstr ""
 
-#: application/controllers/LocaleController.php:424
+#: application/controllers/LocaleController.php:427
 msgid "First"
 msgstr ""
 
-#: application/controllers/LocaleController.php:425
+#: application/controllers/LocaleController.php:428
 msgid "Last"
 msgstr ""
 
-#: application/controllers/LocaleController.php:426
+#: application/controllers/LocaleController.php:429
 msgid "Next"
 msgstr "Következő"
 
-#: application/controllers/LocaleController.php:427
+#: application/controllers/LocaleController.php:430
 msgid "Previous"
 msgstr ""
 
-#: application/controllers/LocaleController.php:428
+#: application/controllers/LocaleController.php:431
 msgid "Search:"
 msgstr ""
 
-#: application/controllers/LocaleController.php:429
-#: application/controllers/LocaleController.php:442
+#: application/controllers/LocaleController.php:432
+#: application/controllers/LocaleController.php:445
 msgid "No matching records found"
 msgstr ""
 
-#: application/controllers/LocaleController.php:430
+#: application/controllers/LocaleController.php:433
 msgid "Drag tracks here from the library"
 msgstr ""
 
-#: application/controllers/LocaleController.php:431
+#: application/controllers/LocaleController.php:434
 msgid "No tracks were played during the selected time period."
 msgstr ""
 
-#: application/controllers/LocaleController.php:432
+#: application/controllers/LocaleController.php:435
 msgid "Unpublish"
 msgstr "Közzététel megszüntetése"
 
-#: application/controllers/LocaleController.php:433
+#: application/controllers/LocaleController.php:436
 msgid "No matching results found."
 msgstr ""
 
-#: application/controllers/LocaleController.php:434
+#: application/controllers/LocaleController.php:437
 msgid "Author"
 msgstr "Szerző"
 
-#: application/controllers/LocaleController.php:435
+#: application/controllers/LocaleController.php:438
 #: application/forms/SmartBlockCriteria.php:65
-#: application/forms/StreamSettingSubForm.php:148
-#: application/models/Block.php:1433 application/models/Block.php:1529
+#: application/forms/StreamSettingSubForm.php:134
+#: application/models/Block.php:1441 application/models/Block.php:1539
 msgid "Description"
 msgstr "Leírás"
 
-#: application/controllers/LocaleController.php:436
+#: application/controllers/LocaleController.php:439
 msgid "Link"
 msgstr "Hivatkozás"
 
-#: application/controllers/LocaleController.php:437
+#: application/controllers/LocaleController.php:440
 msgid "Publication Date"
 msgstr ""
 
-#: application/controllers/LocaleController.php:438
+#: application/controllers/LocaleController.php:441
 msgid "Import Status"
 msgstr ""
 
-#: application/controllers/LocaleController.php:439
+#: application/controllers/LocaleController.php:442
 msgid "Actions"
 msgstr ""
 
-#: application/controllers/LocaleController.php:440
+#: application/controllers/LocaleController.php:443
 msgid "Delete from Library"
 msgstr ""
 
-#: application/controllers/LocaleController.php:441
+#: application/controllers/LocaleController.php:444
 msgid "Successfully imported"
 msgstr ""
 
-#: application/controllers/LocaleController.php:443
+#: application/controllers/LocaleController.php:446
 msgid "Show _MENU_"
 msgstr ""
 
-#: application/controllers/LocaleController.php:444
+#: application/controllers/LocaleController.php:447
 msgid "Show _MENU_ entries"
 msgstr ""
 
-#: application/controllers/LocaleController.php:445
+#: application/controllers/LocaleController.php:448
 msgid "Showing _START_ to _END_ of _TOTAL_ entries"
 msgstr ""
 
-#: application/controllers/LocaleController.php:446
+#: application/controllers/LocaleController.php:449
 msgid "Showing _START_ to _END_ of _TOTAL_ tracks"
 msgstr ""
 
-#: application/controllers/LocaleController.php:447
+#: application/controllers/LocaleController.php:450
 msgid "Showing _START_ to _END_ of _TOTAL_ track types"
 msgstr ""
 
-#: application/controllers/LocaleController.php:448
+#: application/controllers/LocaleController.php:451
 msgid "Showing _START_ to _END_ of _TOTAL_ users"
 msgstr ""
 
-#: application/controllers/LocaleController.php:449
+#: application/controllers/LocaleController.php:452
 msgid "Showing 0 to 0 of 0 entries"
 msgstr ""
 
-#: application/controllers/LocaleController.php:450
+#: application/controllers/LocaleController.php:453
 msgid "Showing 0 to 0 of 0 tracks"
 msgstr ""
 
-#: application/controllers/LocaleController.php:451
+#: application/controllers/LocaleController.php:454
 msgid "Showing 0 to 0 of 0 track types"
 msgstr ""
 
-#: application/controllers/LocaleController.php:452
+#: application/controllers/LocaleController.php:455
 msgid "(filtered from _MAX_ total track types)"
 msgstr ""
 
-#: application/controllers/LocaleController.php:454
+#: application/controllers/LocaleController.php:457
 msgid "Are you sure you want to delete this tracktype?"
 msgstr ""
 
-#: application/controllers/LocaleController.php:455
+#: application/controllers/LocaleController.php:458
 msgid "No track types were found."
 msgstr ""
 
-#: application/controllers/LocaleController.php:456
+#: application/controllers/LocaleController.php:459
 msgid "No track types found"
 msgstr ""
 
-#: application/controllers/LocaleController.php:457
+#: application/controllers/LocaleController.php:460
 msgid "No matching track types found"
 msgstr ""
 
-#: application/controllers/LocaleController.php:458
+#: application/controllers/LocaleController.php:461
 #: application/forms/AddTracktype.php:50
 #: application/forms/GeneralPreferences.php:125
-#: application/forms/GeneralPreferences.php:140
-#: application/forms/GeneralPreferences.php:158
-#: application/forms/GeneralPreferences.php:217
+#: application/forms/GeneralPreferences.php:141
+#: application/forms/GeneralPreferences.php:160
+#: application/forms/GeneralPreferences.php:221
 msgid "Enabled"
 msgstr "Engedélyezve"
 
-#: application/controllers/LocaleController.php:459
+#: application/controllers/LocaleController.php:462
 #: application/forms/AddTracktype.php:49
 #: application/forms/GeneralPreferences.php:124
-#: application/forms/GeneralPreferences.php:139
-#: application/forms/GeneralPreferences.php:157
-#: application/forms/GeneralPreferences.php:216
+#: application/forms/GeneralPreferences.php:140
+#: application/forms/GeneralPreferences.php:159
+#: application/forms/GeneralPreferences.php:220
 msgid "Disabled"
 msgstr "Letiltva"
 
-#: application/controllers/LocaleController.php:460
+#: application/controllers/LocaleController.php:463
 msgid "Cancel upload"
 msgstr ""
 
-#: application/controllers/LocaleController.php:461
+#: application/controllers/LocaleController.php:464
 msgid "Type"
 msgstr ""
 
-#: application/controllers/LocaleController.php:462
-msgid "Autoloading playlists' contents are added to shows one hour before the show airs. <a target='_blank' href='http://libretime.org/docs/playlists'>More information</a>"
-msgstr ""
-
-#: application/controllers/LocaleController.php:463
-msgid "Podcast settings saved"
-msgstr ""
-
-#: application/controllers/LocaleController.php:464
-msgid "Are you sure you want to delete this user?"
-msgstr ""
-
 #: application/controllers/LocaleController.php:465
-msgid "Can't delete yourself!"
+msgid "Autoloading playlists' contents are added to shows one hour before the show airs. <a target='_blank' href='https://libretime.org/docs/user-manual/playlists/'>More information</a>"
 msgstr ""
 
 #: application/controllers/LocaleController.php:466
-msgid "You haven't published any episodes!"
+msgid "Podcast settings saved"
 msgstr ""
 
 #: application/controllers/LocaleController.php:467
-msgid "You can publish your uploaded content from the 'Tracks' view."
+msgid "Are you sure you want to delete this user?"
 msgstr ""
 
 #: application/controllers/LocaleController.php:468
-msgid "Try it now"
+msgid "Can't delete yourself!"
 msgstr ""
 
 #: application/controllers/LocaleController.php:469
-msgid "<p>If this option is unchecked, the smartblock will schedule as many tracks as can be played out <strong>in their entirety</strong> within the specified duration. This will usually result in audio playback that is slightly less than the specified duration.</p><p>If this option is checked, the smartblock will also schedule one final track which will overflow the specified duration. This final track may be cut off mid-way if the show into which the smartblock is added finishes.</p>"
+msgid "You haven't published any episodes!"
 msgstr ""
 
 #: application/controllers/LocaleController.php:470
-msgid "Playlist preview"
+msgid "You can publish your uploaded content from the 'Tracks' view."
 msgstr ""
 
 #: application/controllers/LocaleController.php:471
-msgid "Smart Block"
-msgstr "Okosblokk"
+msgid "Try it now"
+msgstr ""
 
 #: application/controllers/LocaleController.php:472
-msgid "Webstream preview"
+msgid "<p>If this option is unchecked, the smartblock will schedule as many tracks as can be played out <strong>in their entirety</strong> within the specified duration. This will usually result in audio playback that is slightly less than the specified duration.</p><p>If this option is checked, the smartblock will also schedule one final track which will overflow the specified duration. This final track may be cut off mid-way if the show into which the smartblock is added finishes.</p>"
 msgstr ""
 
 #: application/controllers/LocaleController.php:473
-msgid "You don't have permission to view the library."
+msgid "Playlist preview"
 msgstr ""
 
 #: application/controllers/LocaleController.php:474
+msgid "Smart Block"
+msgstr "Okosblokk"
+
+#: application/controllers/LocaleController.php:475
+msgid "Webstream preview"
+msgstr ""
+
+#: application/controllers/LocaleController.php:476
+msgid "You don't have permission to view the library."
+msgstr ""
+
+#: application/controllers/LocaleController.php:477
 #: application/forms/AddShowWhen.php:23
 msgid "Now"
 msgstr ""
 
-#: application/controllers/LocaleController.php:475
+#: application/controllers/LocaleController.php:478
 msgid "Click 'New' to create one now."
 msgstr ""
 
-#: application/controllers/LocaleController.php:476
+#: application/controllers/LocaleController.php:479
 msgid "Click 'Upload' to add some now."
 msgstr ""
 
-#: application/controllers/LocaleController.php:477
+#: application/controllers/LocaleController.php:480
 msgid "Feed URL"
 msgstr ""
 
-#: application/controllers/LocaleController.php:478
+#: application/controllers/LocaleController.php:481
 msgid "Import Date"
 msgstr ""
 
-#: application/controllers/LocaleController.php:479
+#: application/controllers/LocaleController.php:482
 msgid "Add New Podcast"
 msgstr ""
 
-#: application/controllers/LocaleController.php:480
+#: application/controllers/LocaleController.php:483
 msgid ""
 "Cannot schedule outside a show.\n"
 "Try creating a show first."
 msgstr ""
 
-#: application/controllers/LocaleController.php:481
+#: application/controllers/LocaleController.php:484
 msgid "No files have been uploaded yet."
 msgstr ""
 
-#: application/controllers/LocaleController.php:487
+#: application/controllers/LocaleController.php:490
 msgid "On Air"
 msgstr "Adásban"
 
-#: application/controllers/LocaleController.php:488
+#: application/controllers/LocaleController.php:491
 msgid "Off Air"
 msgstr "Adásszünet"
 
-#: application/controllers/LocaleController.php:489
+#: application/controllers/LocaleController.php:492
 msgid "Offline"
 msgstr "Kapcsolat nélkül"
 
-#: application/controllers/LocaleController.php:490
+#: application/controllers/LocaleController.php:493
 msgid "Nothing scheduled"
 msgstr "Nincs semmi ütemezve"
 
-#: application/controllers/LocaleController.php:491
+#: application/controllers/LocaleController.php:494
 msgid "Click 'Add' to create one now."
 msgstr ""
 
-#: application/controllers/LoginController.php:50
+#: application/controllers/LoginController.php:47
 msgid "Please enter your username and password."
 msgstr "Kérjük adja meg felhasználónevét és jelszavát."
 
-#: application/controllers/LoginController.php:154
+#: application/controllers/LoginController.php:147
 msgid "Email could not be sent. Check your mail server settings and ensure it has been configured properly."
 msgstr "Az emailt nem lehetett elküldeni. Ellenőrizni kell a levelező kiszolgáló beállításait és, hogy megfelelő-e a konfiguráció."
 
-#: application/controllers/LoginController.php:157
+#: application/controllers/LoginController.php:150
 msgid "That username or email address could not be found."
 msgstr "A felhasználónév vagy email cím nem található."
 
-#: application/controllers/LoginController.php:160
+#: application/controllers/LoginController.php:153
 msgid "There was a problem with the username or email address you entered."
 msgstr "Valamilyen probléma van a megadott felhasználónévvel vagy email címmel."
 
-#: application/controllers/LoginController.php:238
+#: application/controllers/LoginController.php:231
 msgid "Wrong username or password provided. Please try again."
 msgstr "Hibás felhasználónév vagy jelszó. Kérjük, próbálja meg újra."
 
@@ -2753,60 +2771,60 @@ msgstr "Névtelen okosblokk"
 msgid "Unknown Playlist"
 msgstr "Ismeretlen lejátszási lista"
 
-#: application/controllers/PreferenceController.php:73
+#: application/controllers/PreferenceController.php:70
 msgid "Preferences updated."
 msgstr "Beállítások frissítve."
 
-#: application/controllers/PreferenceController.php:308
+#: application/controllers/PreferenceController.php:204
 msgid "Stream Setting Updated."
 msgstr "Adásfolyam beállítások frissítve."
 
-#: application/controllers/PreferenceController.php:356
+#: application/controllers/PreferenceController.php:249
 msgid "path should be specified"
 msgstr "az útvonalat meg kell határozni"
 
-#: application/controllers/PreferenceController.php:399
+#: application/controllers/PreferenceController.php:292
 msgid "Problem with Liquidsoap..."
 msgstr "Probléma lépett fel a Liquidsoap-al..."
 
-#: application/controllers/PreferenceController.php:462
+#: application/controllers/PreferenceController.php:335
 msgid "Request method not accepted"
 msgstr "A kérés módja nem elfogadott"
 
-#: application/controllers/ScheduleController.php:394
+#: application/controllers/ScheduleController.php:390
 #, fuzzy, php-format
 msgid "Rebroadcast of show %s from %s at %s"
 msgstr "A műsor újraközvetítése %s -tól/-től %s a %s"
 
-#: application/controllers/ShowbuilderController.php:137
+#: application/controllers/ShowbuilderController.php:133
 msgid "Select cursor"
 msgstr "Kurzor kiválasztása"
 
-#: application/controllers/ShowbuilderController.php:138
+#: application/controllers/ShowbuilderController.php:134
 msgid "Remove cursor"
 msgstr "Kurzor eltávolítása"
 
-#: application/controllers/ShowbuilderController.php:156
+#: application/controllers/ShowbuilderController.php:152
 msgid "show does not exist"
 msgstr "a műsor nem található"
 
-#: application/controllers/TracktypeController.php:69
+#: application/controllers/TracktypeController.php:61
 msgid "Track Type added successfully!"
 msgstr ""
 
-#: application/controllers/TracktypeController.php:71
+#: application/controllers/TracktypeController.php:63
 msgid "Track Type updated successfully!"
 msgstr ""
 
-#: application/controllers/UserController.php:86
+#: application/controllers/UserController.php:78
 msgid "User added successfully!"
 msgstr "Felhasználó sikeresen hozzáadva!"
 
-#: application/controllers/UserController.php:88
+#: application/controllers/UserController.php:80
 msgid "User updated successfully!"
 msgstr "Felhasználó sikeresen módosítva!"
 
-#: application/controllers/UserController.php:188
+#: application/controllers/UserController.php:184
 msgid "Settings updated successfully!"
 msgstr "Beállítások sikeresen módosítva!"
 
@@ -2825,19 +2843,10 @@ msgstr "Érvénytelen űrlap értékek."
 
 #: application/forms/AddShowAbsoluteRebroadcastDates.php:24
 #: application/forms/AddShowRebroadcastDates.php:29
-#: application/forms/DateRange.php:34 application/forms/DateRange.php:62
-#: application/forms/LiveStreamingPreferences.php:88
-#: application/forms/LiveStreamingPreferences.php:115
-#: application/forms/ShowBuilder.php:36 application/forms/ShowBuilder.php:64
-#: application/forms/ShowListenerStat.php:34
-#: application/forms/ShowListenerStat.php:62
-#: application/forms/StreamSettingSubForm.php:102
-#: application/forms/StreamSettingSubForm.php:121
-#: application/forms/StreamSettingSubForm.php:136
-#: application/forms/StreamSettingSubForm.php:158
-#: application/forms/StreamSettingSubForm.php:168
-#: application/forms/StreamSettingSubForm.php:177
-#: application/forms/StreamSettingSubForm.php:186
+#: application/forms/DateRange.php:35 application/forms/DateRange.php:65
+#: application/forms/ShowBuilder.php:37 application/forms/ShowBuilder.php:67
+#: application/forms/ShowListenerStat.php:35
+#: application/forms/ShowListenerStat.php:65
 msgid "Invalid character entered"
 msgstr "Érvénytelen bevitt karakterek"
 
@@ -2881,27 +2890,27 @@ msgstr "Egyéni hitelesítés használata:"
 msgid "Custom Username"
 msgstr "Egyéni felhasználónév"
 
-#: application/forms/AddShowLiveStream.php:37
+#: application/forms/AddShowLiveStream.php:38
 msgid "Custom Password"
 msgstr "Egyéni jelszó"
 
-#: application/forms/AddShowLiveStream.php:48
+#: application/forms/AddShowLiveStream.php:50
 msgid "Host:"
 msgstr "Hoszt:"
 
-#: application/forms/AddShowLiveStream.php:54
+#: application/forms/AddShowLiveStream.php:56
 msgid "Port:"
 msgstr "Port:"
 
-#: application/forms/AddShowLiveStream.php:60
+#: application/forms/AddShowLiveStream.php:62
 msgid "Mount:"
 msgstr "Csatolási pont:"
 
-#: application/forms/AddShowLiveStream.php:78
+#: application/forms/AddShowLiveStream.php:80
 msgid "Username field cannot be empty."
 msgstr "A felhasználónév mező nem lehet üres."
 
-#: application/forms/AddShowLiveStream.php:83
+#: application/forms/AddShowLiveStream.php:85
 msgid "Password field cannot be empty."
 msgstr "A jelszó mező nem lehet üres."
 
@@ -2962,9 +2971,9 @@ msgstr "a hónap napja"
 msgid "day of the week"
 msgstr "a hét napja"
 
-#: application/forms/AddShowRepeats.php:56 application/forms/DateRange.php:43
-#: application/forms/ShowBuilder.php:45
-#: application/forms/ShowListenerStat.php:43
+#: application/forms/AddShowRepeats.php:56 application/forms/DateRange.php:45
+#: application/forms/ShowBuilder.php:47
+#: application/forms/ShowListenerStat.php:45
 msgid "Date End:"
 msgstr "Befejezés dátuma:"
 
@@ -3012,12 +3021,12 @@ msgstr "Cím nélküli műsor"
 msgid "URL:"
 msgstr "URL:"
 
-#: application/forms/AddShowWhat.php:45 application/forms/EditAudioMD.php:134
+#: application/forms/AddShowWhat.php:45 application/forms/EditAudioMD.php:133
 msgid "Genre:"
 msgstr "Műfaj:"
 
 #: application/forms/AddShowWhat.php:54 application/forms/AddTracktype.php:35
-#: application/forms/EditAudioMD.php:116
+#: application/forms/EditAudioMD.php:115
 msgid "Description:"
 msgstr "Leírás:"
 
@@ -3037,49 +3046,49 @@ msgstr "Kezdési Idő:"
 msgid "In the Future:"
 msgstr "A jövőben:"
 
-#: application/forms/AddShowWhen.php:62
+#: application/forms/AddShowWhen.php:63
 msgid "End Time:"
 msgstr "Befejezési idő:"
 
-#: application/forms/AddShowWhen.php:87
+#: application/forms/AddShowWhen.php:90
 msgid "Duration:"
 msgstr "Időtartam:"
 
-#: application/forms/AddShowWhen.php:96
+#: application/forms/AddShowWhen.php:99
 msgid "Timezone:"
 msgstr "Időzóna:"
 
-#: application/forms/AddShowWhen.php:105
+#: application/forms/AddShowWhen.php:108
 msgid "Repeats?"
 msgstr "Ismétlések?"
 
-#: application/forms/AddShowWhen.php:146
+#: application/forms/AddShowWhen.php:149
 msgid "Cannot create show in the past"
 msgstr "Műsort nem lehet a múltban létrehozni"
 
-#: application/forms/AddShowWhen.php:154
+#: application/forms/AddShowWhen.php:157
 msgid "Cannot modify start date/time of the show that is already started"
 msgstr "Nem lehet módosítani a műsor kezdési dátumát és időpontját, ha a műsor már elkezdődött"
 
-#: application/forms/AddShowWhen.php:163 application/models/Show.php:326
+#: application/forms/AddShowWhen.php:166 application/models/Show.php:326
 msgid "End date/time cannot be in the past"
 msgstr "A befejezési dátum és időpont nem lehet a múltban"
 
-#: application/forms/AddShowWhen.php:171
+#: application/forms/AddShowWhen.php:174
 msgid "Cannot have duration < 0m"
 msgstr "Időtartam nem lehet <0p"
 
-#: application/forms/AddShowWhen.php:174
+#: application/forms/AddShowWhen.php:177
 msgid "Cannot have duration 00h 00m"
 msgstr "Időtartam nem lehet 0ó 0p"
 
-#: application/forms/AddShowWhen.php:180
+#: application/forms/AddShowWhen.php:185
 msgid "Cannot have duration greater than 24h"
 msgstr "Időtartam nem lehet nagyobb mint 24 óra"
 
-#: application/forms/AddShowWhen.php:310 application/forms/AddShowWhen.php:341
-#: application/forms/AddShowWhen.php:346
-#: application/services/CalendarService.php:309
+#: application/forms/AddShowWhen.php:315 application/forms/AddShowWhen.php:346
+#: application/forms/AddShowWhen.php:351
+#: application/services/CalendarService.php:323
 msgid "Cannot schedule overlapping shows"
 msgstr "Nem fedhetik egymást a műsorok"
 
@@ -3107,43 +3116,43 @@ msgstr ""
 msgid "Code is not unique."
 msgstr ""
 
-#: application/forms/AddUser.php:27 application/forms/EditUser.php:35
-#: application/forms/LiveStreamingPreferences.php:41
+#: application/forms/AddUser.php:27 application/forms/EditUser.php:36
+#: application/forms/LiveStreamingPreferences.php:40
 #: application/forms/Login.php:39
 msgid "Username:"
 msgstr "Felhasználónév:"
 
-#: application/forms/AddUser.php:36 application/forms/EditUser.php:46
-#: application/forms/LiveStreamingPreferences.php:57
-#: application/forms/Login.php:52
+#: application/forms/AddUser.php:36 application/forms/EditUser.php:47
+#: application/forms/LiveStreamingPreferences.php:52
+#: application/forms/Login.php:53
 msgid "Password:"
 msgstr "Jelszó:"
 
-#: application/forms/AddUser.php:44 application/forms/EditUser.php:55
+#: application/forms/AddUser.php:44 application/forms/EditUser.php:56
 msgid "Verify Password:"
 msgstr "Jelszóellenőrzés:"
 
-#: application/forms/AddUser.php:53 application/forms/EditUser.php:65
+#: application/forms/AddUser.php:53 application/forms/EditUser.php:66
 msgid "Firstname:"
 msgstr "Vezetéknév:"
 
-#: application/forms/AddUser.php:59 application/forms/EditUser.php:73
+#: application/forms/AddUser.php:59 application/forms/EditUser.php:74
 msgid "Lastname:"
 msgstr "Keresztnév:"
 
-#: application/forms/AddUser.php:65 application/forms/EditUser.php:81
+#: application/forms/AddUser.php:65 application/forms/EditUser.php:82
 msgid "Email:"
 msgstr "Email:"
 
-#: application/forms/AddUser.php:74 application/forms/EditUser.php:92
+#: application/forms/AddUser.php:74 application/forms/EditUser.php:93
 msgid "Mobile Phone:"
 msgstr "Mobiltelefon:"
 
-#: application/forms/AddUser.php:80 application/forms/EditUser.php:100
+#: application/forms/AddUser.php:80 application/forms/EditUser.php:101
 msgid "Skype:"
 msgstr "Skype:"
 
-#: application/forms/AddUser.php:86 application/forms/EditUser.php:108
+#: application/forms/AddUser.php:86 application/forms/EditUser.php:109
 msgid "Jabber:"
 msgstr "Jabber:"
 
@@ -3151,7 +3160,7 @@ msgstr "Jabber:"
 msgid "User Type:"
 msgstr "Felhasználótípus:"
 
-#: application/forms/AddUser.php:118 application/forms/EditUser.php:142
+#: application/forms/AddUser.php:118 application/forms/EditUser.php:143
 msgid "Login name is not unique."
 msgstr "A bejelentkezési név nem egyedi."
 
@@ -3164,51 +3173,51 @@ msgstr "Az összes sáv törlése a könyvtárból"
 msgid "Date Start:"
 msgstr "Kezdés Ideje:"
 
-#: application/forms/EditAudioMD.php:53 application/forms/Player.php:15
+#: application/forms/EditAudioMD.php:52 application/forms/Player.php:15
 msgid "Title:"
 msgstr "Cím:"
 
-#: application/forms/EditAudioMD.php:63
+#: application/forms/EditAudioMD.php:62
 msgid "Creator:"
 msgstr "Létrehozó:"
 
-#: application/forms/EditAudioMD.php:73
+#: application/forms/EditAudioMD.php:72
 msgid "Album:"
 msgstr "Album:"
 
-#: application/forms/EditAudioMD.php:90
+#: application/forms/EditAudioMD.php:89
 msgid "Owner:"
 msgstr ""
 
-#: application/forms/EditAudioMD.php:102
+#: application/forms/EditAudioMD.php:101
 msgid "Select a Type"
 msgstr ""
 
-#: application/forms/EditAudioMD.php:109
+#: application/forms/EditAudioMD.php:108
 msgid "Track Type:"
 msgstr ""
 
-#: application/forms/EditAudioMD.php:144
+#: application/forms/EditAudioMD.php:143
 msgid "Year:"
 msgstr "Év:"
 
-#: application/forms/EditAudioMD.php:157
+#: application/forms/EditAudioMD.php:156
 msgid "Label:"
 msgstr "Címke:"
 
-#: application/forms/EditAudioMD.php:167
+#: application/forms/EditAudioMD.php:166
 msgid "Composer:"
 msgstr "Zeneszerző:"
 
-#: application/forms/EditAudioMD.php:177
+#: application/forms/EditAudioMD.php:176
 msgid "Conductor:"
 msgstr "Karmester:"
 
-#: application/forms/EditAudioMD.php:187
+#: application/forms/EditAudioMD.php:186
 msgid "Mood:"
 msgstr "Hangulat:"
 
-#: application/forms/EditAudioMD.php:197
+#: application/forms/EditAudioMD.php:196
 msgid "BPM:"
 msgstr "BPM:"
 
@@ -3224,8 +3233,8 @@ msgstr "ISRC Szám:"
 msgid "Website:"
 msgstr "Honlap:"
 
-#: application/forms/EditAudioMD.php:237 application/forms/EditUser.php:117
-#: application/forms/Login.php:66
+#: application/forms/EditAudioMD.php:237 application/forms/EditUser.php:118
+#: application/forms/Login.php:67
 msgid "Language:"
 msgstr "Nyelv:"
 
@@ -3243,7 +3252,7 @@ msgstr "Kezdési Idő"
 msgid "End Time"
 msgstr "Befejezési idő"
 
-#: application/forms/EditUser.php:127
+#: application/forms/EditUser.php:128
 msgid "Interface Timezone:"
 msgstr "Felület időzónája:"
 
@@ -3271,7 +3280,7 @@ msgstr "Alapértelmezett Áttünési Időtartam (mp):"
 #: application/forms/GeneralPreferences.php:69
 #: application/forms/GeneralPreferences.php:83
 #: application/forms/GeneralPreferences.php:97
-#: application/forms/LiveStreamingPreferences.php:33
+#: application/forms/LiveStreamingPreferences.php:31
 msgid "Please enter a time in seconds (eg. 0.5)"
 msgstr "Idő megadása másodpercben (pl.: 0.5)"
 
@@ -3305,117 +3314,110 @@ msgstr "Podcast album felülírása"
 msgid "Enabling this feature will cause podcast episode tracks to have their Artist, Title, and Album metatags set from podcast feed values. Note that enabling this feature is recommended in order to ensure reliable scheduling of episodes via smartblocks."
 msgstr "Ha engedélyezett, a podcast sávok album mezőjébe mindig a podcast neve kerül."
 
-#: application/forms/GeneralPreferences.php:137
+#: application/forms/GeneralPreferences.php:138
 msgid "Generate a smartblock and a playlist upon creation of a new podcast"
 msgstr ""
 
-#: application/forms/GeneralPreferences.php:143
+#: application/forms/GeneralPreferences.php:144
 msgid "If this option is enabled, a new smartblock and playlist matching the newest track of a podcast will be generated immediately upon creation of a new podcast. Note that the \"Overwrite Podcast Episode Metatags\" feature must also be enabled in order for smartblocks to reliably find episodes."
 msgstr ""
 
-#: application/forms/GeneralPreferences.php:154
+#: application/forms/GeneralPreferences.php:156
 msgid "Public LibreTime API"
 msgstr "Public LibreTime API"
 
-#: application/forms/GeneralPreferences.php:155
+#: application/forms/GeneralPreferences.php:157
 msgid "Required for embeddable schedule widget."
 msgstr "Kötelező a beágyazható ütemezés felületi elemhez."
 
-#: application/forms/GeneralPreferences.php:161
+#: application/forms/GeneralPreferences.php:163
 msgid ""
 "Enabling this feature will allow LibreTime to provide schedule data\n"
 "                                            to external widgets that can be embedded in your website."
 msgstr "Bejelölve engedélyezi az AirTime-nak, hogy ütemezési adatokat biztosítson a weboldalakba beágyazható külső felületi elemek számára."
 
-#: application/forms/GeneralPreferences.php:173
+#: application/forms/GeneralPreferences.php:176
 msgid "Allowed CORS URLs (DEPRECATED)"
 msgstr ""
 
-#: application/forms/GeneralPreferences.php:174
+#: application/forms/GeneralPreferences.php:177
 msgid "Remote URLs that are allowed to access this LibreTime instance in a browser. One URL per line. (DEPRECATED: Allowed CORS origins configuration moved to the configuration file.)"
 msgstr ""
 
-#: application/forms/GeneralPreferences.php:179
+#: application/forms/GeneralPreferences.php:182
 msgid "Default Language"
 msgstr "Alapértelmezett nyelv"
 
-#: application/forms/GeneralPreferences.php:186
-#: application/forms/SetupLanguageTimezone.php:21
+#: application/forms/GeneralPreferences.php:189
+#: application/forms/SetupLanguageTimezone.php:22
 msgid "Station Timezone"
 msgstr "Állomás időzóna"
 
-#: application/forms/GeneralPreferences.php:193
+#: application/forms/GeneralPreferences.php:197
 msgid "Week Starts On"
 msgstr "A hét kezdőnapja"
 
-#: application/forms/GeneralPreferences.php:209
+#: application/forms/GeneralPreferences.php:213
 msgid "Display login button on your Radio Page?"
 msgstr "Bejelentkezési gomb megjelenítése a Rádióoldalon?"
 
-#: application/forms/GeneralPreferences.php:214
+#: application/forms/GeneralPreferences.php:218
 msgid "Feature Previews"
 msgstr ""
 
-#: application/forms/GeneralPreferences.php:220
+#: application/forms/GeneralPreferences.php:224
 msgid "Enable this to opt-in to test new features."
 msgstr ""
 
-#: application/forms/LiveStreamingPreferences.php:18
+#: application/forms/LiveStreamingPreferences.php:15
 msgid "Auto Switch Off:"
 msgstr "Automatikus kikapcsolás:"
 
-#: application/forms/LiveStreamingPreferences.php:24
+#: application/forms/LiveStreamingPreferences.php:21
 msgid "Auto Switch On:"
 msgstr "Automatikus bekapcsolás:"
 
-#: application/forms/LiveStreamingPreferences.php:30
+#: application/forms/LiveStreamingPreferences.php:27
 msgid "Switch Transition Fade (s):"
 msgstr ""
 
-#: application/forms/LiveStreamingPreferences.php:65
+#: application/forms/LiveStreamingPreferences.php:59
 msgid "Master Source Host:"
 msgstr "Mester-forrás hoszt:"
 
-#: application/forms/LiveStreamingPreferences.php:76
+#: application/forms/LiveStreamingPreferences.php:66
 msgid "Master Source Port:"
 msgstr "Mester-forrás port:"
 
-#: application/forms/LiveStreamingPreferences.php:79
-#: application/forms/LiveStreamingPreferences.php:107
-#: application/forms/StreamSettingSubForm.php:112
-msgid "Only numbers are allowed."
-msgstr "Csak számok adhatók meg."
-
-#: application/forms/LiveStreamingPreferences.php:85
+#: application/forms/LiveStreamingPreferences.php:73
 msgid "Master Source Mount:"
 msgstr "Mester-forrás csatolási pont:"
 
-#: application/forms/LiveStreamingPreferences.php:95
+#: application/forms/LiveStreamingPreferences.php:81
 msgid "Show Source Host:"
 msgstr "Műsor-forrás hoszt:"
 
-#: application/forms/LiveStreamingPreferences.php:104
+#: application/forms/LiveStreamingPreferences.php:88
 msgid "Show Source Port:"
 msgstr "Műsor-forrás port:"
 
-#: application/forms/LiveStreamingPreferences.php:112
+#: application/forms/LiveStreamingPreferences.php:95
 msgid "Show Source Mount:"
 msgstr "Műsor-forrás csatolási pont:"
 
-#: application/forms/Login.php:77
+#: application/forms/Login.php:78
 msgid "Login"
 msgstr "Bejelentkezés"
 
 #: application/forms/PasswordChange.php:15
-#: application/forms/StreamSettingSubForm.php:117
 msgid "Password"
 msgstr "Jelszó"
 
-#: application/forms/PasswordChange.php:26
+#: application/forms/PasswordChange.php:28
 msgid "Confirm new password"
 msgstr "Új jelszó megerősítése"
 
-#: application/forms/PasswordChange.php:34
+#: application/forms/PasswordChange.php:36
 msgid "Password confirmation does not match your password."
 msgstr "A megadott jelszavak nem egyeznek meg."
 
@@ -3424,7 +3426,6 @@ msgid "Email"
 msgstr "Email"
 
 #: application/forms/PasswordRestore.php:23
-#: application/forms/StreamSettingSubForm.php:164
 msgid "Username"
 msgstr "Felhasználónév"
 
@@ -3484,61 +3485,61 @@ msgstr "Nyilvános"
 msgid "Private"
 msgstr "Privát"
 
-#: application/forms/SetupLanguageTimezone.php:16
+#: application/forms/SetupLanguageTimezone.php:17
 msgid "Station Language"
 msgstr "Állomás nyelve"
 
-#: application/forms/ShowBuilder.php:71 application/forms/ShowBuilder.php:88
+#: application/forms/ShowBuilder.php:75 application/forms/ShowBuilder.php:92
 msgid "Filter by Show"
 msgstr "Szűrés műsor szerint"
 
-#: application/forms/ShowBuilder.php:79
+#: application/forms/ShowBuilder.php:83
 msgid "All My Shows:"
 msgstr "Összes műsorom:"
 
-#: application/forms/ShowBuilder.php:90
+#: application/forms/ShowBuilder.php:94
 msgid "My Shows"
 msgstr "Műsoraim"
 
 #: application/forms/SmartBlockCriteria.php:56
-#: application/models/Block.php:1424 application/models/Block.php:1520
+#: application/models/Block.php:1432 application/models/Block.php:1530
 msgid "Select criteria"
 msgstr "A feltételek megadása"
 
 #: application/forms/SmartBlockCriteria.php:58
-#: application/models/Block.php:1426 application/models/Block.php:1522
+#: application/models/Block.php:1434 application/models/Block.php:1532
 msgid "Bit Rate (Kbps)"
 msgstr "Bitráta (Kbps)"
 
 #: application/forms/SmartBlockCriteria.php:75
-#: application/models/Block.php:1444 application/models/Block.php:1540
+#: application/models/Block.php:1452 application/models/Block.php:1550
 #: application/services/HistoryService.php:1065
 msgid "Track Type"
 msgstr ""
 
 #: application/forms/SmartBlockCriteria.php:80
-#: application/models/Block.php:1449 application/models/Block.php:1545
+#: application/models/Block.php:1457 application/models/Block.php:1555
 msgid "Sample Rate (kHz)"
 msgstr "Mintavételi ráta (kHz)"
 
 #: application/forms/SmartBlockCriteria.php:134
-#: application/models/Block.php:1465 application/models/Block.php:1561
+#: application/models/Block.php:1473 application/models/Block.php:1571
 msgid "before"
 msgstr ""
 
 #: application/forms/SmartBlockCriteria.php:135
-#: application/models/Block.php:1466 application/models/Block.php:1562
+#: application/models/Block.php:1474 application/models/Block.php:1572
 msgid "after"
 msgstr ""
 
 #: application/forms/SmartBlockCriteria.php:136
-#: application/models/Block.php:1467 application/models/Block.php:1563
+#: application/models/Block.php:1475 application/models/Block.php:1573
 msgid "between"
 msgstr ""
 
 #: application/forms/SmartBlockCriteria.php:152
-#: application/forms/SmartBlockCriteria.php:463
-#: application/forms/SmartBlockCriteria.php:503
+#: application/forms/SmartBlockCriteria.php:471
+#: application/forms/SmartBlockCriteria.php:513
 msgid "Select unit of time"
 msgstr ""
 
@@ -3575,7 +3576,7 @@ msgid "minutes"
 msgstr "perc"
 
 #: application/forms/SmartBlockCriteria.php:171
-#: application/models/Block.php:336
+#: application/models/Block.php:337
 msgid "items"
 msgstr "elem"
 
@@ -3619,247 +3620,187 @@ msgstr "Dinamikus"
 msgid "Static"
 msgstr "Statikus"
 
-#: application/forms/SmartBlockCriteria.php:431
+#: application/forms/SmartBlockCriteria.php:437
 msgid "Select track type"
 msgstr ""
 
-#: application/forms/SmartBlockCriteria.php:513
+#: application/forms/SmartBlockCriteria.php:523
 msgid "Allow Repeated Tracks:"
 msgstr "Ismétlődő sávok engedélyezése:"
 
-#: application/forms/SmartBlockCriteria.php:521
+#: application/forms/SmartBlockCriteria.php:531
 msgid "Allow last track to exceed time limit:"
 msgstr ""
 
-#: application/forms/SmartBlockCriteria.php:530
+#: application/forms/SmartBlockCriteria.php:540
 msgid "Sort Tracks:"
 msgstr "Sávok rendezése:"
 
-#: application/forms/SmartBlockCriteria.php:548
+#: application/forms/SmartBlockCriteria.php:558
 msgid "Limit to:"
 msgstr "Korlátozva:"
 
-#: application/forms/SmartBlockCriteria.php:560
+#: application/forms/SmartBlockCriteria.php:570
 msgid "Generate playlist content and save criteria"
 msgstr "Lejátszási lista tartalmának létrehozása és a feltétel mentése"
 
-#: application/forms/SmartBlockCriteria.php:572
+#: application/forms/SmartBlockCriteria.php:582
 msgid "Shuffle playlist content"
 msgstr "Véletlenszerű lejátszási lista tartalom"
 
-#: application/forms/SmartBlockCriteria.php:574
+#: application/forms/SmartBlockCriteria.php:584
 msgid "Shuffle"
 msgstr "Véletlenszerű"
 
-#: application/forms/SmartBlockCriteria.php:801
 #: application/forms/SmartBlockCriteria.php:813
+#: application/forms/SmartBlockCriteria.php:825
 msgid "Limit cannot be empty or smaller than 0"
 msgstr "A határérték nem lehet üres vagy kisebb, mint 0"
 
-#: application/forms/SmartBlockCriteria.php:806
+#: application/forms/SmartBlockCriteria.php:818
 msgid "Limit cannot be more than 24 hrs"
 msgstr "A határérték nem lehet hosszabb, mint 24 óra"
 
-#: application/forms/SmartBlockCriteria.php:816
+#: application/forms/SmartBlockCriteria.php:828
 msgid "The value should be an integer"
 msgstr "Az érték csak egész szám lehet"
 
-#: application/forms/SmartBlockCriteria.php:819
+#: application/forms/SmartBlockCriteria.php:831
 msgid "500 is the max item limit value you can set"
 msgstr "Maximum 500 elem állítható be"
 
-#: application/forms/SmartBlockCriteria.php:830
+#: application/forms/SmartBlockCriteria.php:842
 msgid "You must select Criteria and Modifier"
 msgstr "Feltételt és módosítót kell választani"
 
-#: application/forms/SmartBlockCriteria.php:837
+#: application/forms/SmartBlockCriteria.php:849
 msgid "'Length' should be in '00:00:00' format"
 msgstr "A „Hosszúság”-ot „00:00:00” formában kell megadni"
 
-#: application/forms/SmartBlockCriteria.php:845
+#: application/forms/SmartBlockCriteria.php:858
 msgid "Only non-negative integer numbers are allowed (e.g 1 or 5) for the text value"
 msgstr ""
 
-#: application/forms/SmartBlockCriteria.php:850
-#: application/forms/SmartBlockCriteria.php:875
+#: application/forms/SmartBlockCriteria.php:863
+#: application/forms/SmartBlockCriteria.php:888
 msgid "You must select a time unit for a relative datetime."
 msgstr ""
 
-#: application/forms/SmartBlockCriteria.php:855
-#: application/forms/SmartBlockCriteria.php:880
+#: application/forms/SmartBlockCriteria.php:868
+#: application/forms/SmartBlockCriteria.php:893
 msgid "The value should be in timestamp format (e.g. 0000-00-00 or 0000-00-00 00:00:00)"
 msgstr "Az értéknek az alábbi időbélyeg formátumban kell lennie (pl. 0000-00-00 vagy 0000-00-00 00:00:00)"
 
-#: application/forms/SmartBlockCriteria.php:870
+#: application/forms/SmartBlockCriteria.php:883
 msgid "Only non-negative integer numbers are allowed for a relative date time"
 msgstr ""
 
-#: application/forms/SmartBlockCriteria.php:895
+#: application/forms/SmartBlockCriteria.php:910
 msgid "The value has to be numeric"
 msgstr "Az értéknek numerikusnak kell lennie"
 
-#: application/forms/SmartBlockCriteria.php:900
+#: application/forms/SmartBlockCriteria.php:915
 msgid "The value should be less then 2147483648"
 msgstr "Az értéknek kevesebbnek kell lennie, mint 2147483648"
 
-#: application/forms/SmartBlockCriteria.php:905
+#: application/forms/SmartBlockCriteria.php:920
+msgid "The value cannot be empty"
+msgstr ""
+
+#: application/forms/SmartBlockCriteria.php:925
 #, php-format
 msgid "The value should be less than %s characters"
 msgstr "Az értéknek rövidebb kell lennie, mint %s karakter"
 
-#: application/forms/SmartBlockCriteria.php:912
+#: application/forms/SmartBlockCriteria.php:932
 msgid "Value cannot be empty"
 msgstr "Az érték nem lehet üres"
 
-#: application/forms/StreamSetting.php:25
-msgid "Hardware Audio Output:"
-msgstr "Hardver audio kimenet:"
-
-#: application/forms/StreamSetting.php:32
-msgid "Output Type"
-msgstr "Kimenet típusa"
-
-#: application/forms/StreamSetting.php:34
-msgid "ALSA"
-msgstr "ALSA"
-
-#: application/forms/StreamSetting.php:35
-msgid "AO"
-msgstr "AO"
-
-#: application/forms/StreamSetting.php:36
-msgid "OSS"
-msgstr "OSS"
-
-#: application/forms/StreamSetting.php:37
-msgid "Portaudio"
-msgstr "Portaudio"
-
-#: application/forms/StreamSetting.php:38
-msgid "Pulseaudio"
-msgstr "Pulseaudio"
-
-#: application/forms/StreamSetting.php:39
-msgid "Jack"
-msgstr "Jack"
-
-#: application/forms/StreamSetting.php:46
-msgid "Icecast Vorbis Metadata"
-msgstr "Icecast Vorbis metaadat"
-
-#: application/forms/StreamSetting.php:56
+#: application/forms/StreamSetting.php:26
 msgid "Stream Label:"
 msgstr "Adásfolyam címke:"
 
-#: application/forms/StreamSetting.php:58
+#: application/forms/StreamSetting.php:28
 msgid "Artist - Title"
 msgstr "Előadó - Cím"
 
-#: application/forms/StreamSetting.php:59
+#: application/forms/StreamSetting.php:29
 msgid "Show - Artist - Title"
 msgstr "Műsor - Előadó - Cím"
 
-#: application/forms/StreamSetting.php:60
+#: application/forms/StreamSetting.php:30
 msgid "Station name - Show name"
 msgstr "Állomásnév - Műsornév"
 
-#: application/forms/StreamSetting.php:67
+#: application/forms/StreamSetting.php:38
 msgid "Off Air Metadata"
 msgstr "Adásszünet - Metaadat"
 
-#: application/forms/StreamSetting.php:73
+#: application/forms/StreamSetting.php:45
 #, fuzzy
 msgid "Enable Replay Gain"
 msgstr "Replay Gain Engedélyezése"
 
-#: application/forms/StreamSetting.php:79
+#: application/forms/StreamSetting.php:52
 #, fuzzy
 msgid "Replay Gain Modifier"
 msgstr "Replay Gain Módosító"
 
-#: application/forms/StreamSetting.php:87
-msgid "Streaming Server:"
-msgstr "Adásfolyam szerver:"
+#: application/forms/StreamSetting.php:60
+msgid "Hardware Audio Output:"
+msgstr "Hardver audio kimenet:"
 
-#: application/forms/StreamSetting.php:88
-msgid "Custom / 3rd Party Streaming"
-msgstr "Egyéni / Más féltől származó adásfolyam"
+#: application/forms/StreamSetting.php:69
+msgid "Output Type"
+msgstr "Kimenet típusa"
 
-#: application/forms/StreamSetting.php:88
-msgid "Default Streaming"
-msgstr "Alapértelmezett adásfolyam:"
-
-#: application/forms/StreamSettingSubForm.php:52
+#: application/forms/StreamSettingSubForm.php:35
 msgid "Enabled:"
 msgstr "Engedélyezett:"
 
-#: application/forms/StreamSettingSubForm.php:59
+#: application/forms/StreamSettingSubForm.php:43
 msgid "Mobile:"
 msgstr "Mobil:"
 
-#: application/forms/StreamSettingSubForm.php:66
+#: application/forms/StreamSettingSubForm.php:51
 msgid "Stream Type:"
 msgstr "Adásfolyam típusa:"
 
-#: application/forms/StreamSettingSubForm.php:74
+#: application/forms/StreamSettingSubForm.php:59
 msgid "Bit Rate:"
 msgstr "Bitráta:"
 
-#: application/forms/StreamSettingSubForm.php:82
+#: application/forms/StreamSettingSubForm.php:67
 msgid "Service Type:"
 msgstr "Szolgáltatás típusa:"
 
-#: application/forms/StreamSettingSubForm.php:90
+#: application/forms/StreamSettingSubForm.php:75
 msgid "Channels:"
 msgstr "Csatornák:"
 
-#: application/forms/StreamSettingSubForm.php:91
-msgid "1 - Mono"
-msgstr "1 - Monó"
-
-#: application/forms/StreamSettingSubForm.php:91
-msgid "2 - Stereo"
-msgstr "2 - Sztereó"
-
-#: application/forms/StreamSettingSubForm.php:98
+#: application/forms/StreamSettingSubForm.php:83
 msgid "Server"
 msgstr "Kiszolgáló"
 
-#: application/forms/StreamSettingSubForm.php:108
+#: application/forms/StreamSettingSubForm.php:92
 msgid "Port"
 msgstr "Port"
 
-#: application/forms/StreamSettingSubForm.php:133
+#: application/forms/StreamSettingSubForm.php:100
+msgid "Mount Point"
+msgstr "Csatolási pont"
+
+#: application/forms/StreamSettingSubForm.php:109
+msgid "Name"
+msgstr "Név"
+
+#: application/forms/StreamSettingSubForm.php:125
 msgid "URL"
 msgstr "URL"
 
 #: application/forms/StreamSettingSubForm.php:142
-msgid "Name"
-msgstr "Név"
-
-#: application/forms/StreamSettingSubForm.php:154
-msgid "Mount Point"
-msgstr "Csatolási pont"
-
-#: application/forms/StreamSettingSubForm.php:174
-msgid "Admin User"
-msgstr "Adminisztrátor felhasználó"
-
-#: application/forms/StreamSettingSubForm.php:183
-msgid "Admin Password"
-msgstr "Adminisztrátor jelszó"
-
-#: application/forms/StreamSettingSubForm.php:211
-msgid "Server cannot be empty."
-msgstr "A kiszolgáló nem lehet üres."
-
-#: application/forms/StreamSettingSubForm.php:216
-msgid "Port cannot be empty."
-msgstr "A port nem lehet üres."
-
-#: application/forms/StreamSettingSubForm.php:222
-msgid "Mount cannot be empty with Icecast server."
-msgstr "A csatolási pont nem lehet üres Icecast szerver esetében."
+msgid "Stream URL"
+msgstr ""
 
 #: application/forms/TuneInPreferences.php:20
 msgid "Push metadata to your station on TuneIn?"
@@ -3894,7 +3835,7 @@ msgstr "Figyelt Mappák:"
 msgid "Not a valid Directory"
 msgstr "Érvénytelen könyvtár"
 
-#: application/forms/customvalidators/ConditionalNotEmpty.php:32
+#: application/forms/customvalidators/ConditionalNotEmpty.php:33
 #: application/forms/helpers/ValidationTypes.php:9
 msgid "Value is required and can't be empty"
 msgstr "Kötelező értéket megadni, nem lehet üres"
@@ -3923,7 +3864,7 @@ msgstr "'%value%' értéknek '%min%' és '%max%' között kell lennie"
 msgid "Passwords do not match"
 msgstr "A jelszavak nem egyeznek meg"
 
-#: application/models/Auth.php:33
+#: application/models/Auth.php:31
 #, php-format
 msgid ""
 "Hi %s, \n"
@@ -3934,7 +3875,7 @@ msgstr ""
 "\n"
 "A hivatkozásra kattintva lehet visszaállítani a jelszót:"
 
-#: application/models/Auth.php:35
+#: application/models/Auth.php:33
 #, php-format
 msgid ""
 "\n"
@@ -3945,7 +3886,7 @@ msgstr ""
 "\n"
 "Probléma esetén itt lehet támogatást kérni: %s"
 
-#: application/models/Auth.php:36
+#: application/models/Auth.php:34
 #, php-format
 msgid ""
 "\n"
@@ -3958,34 +3899,34 @@ msgstr ""
 "Köszönettel,\n"
 "%s Csapat"
 
-#: application/models/Auth.php:38
+#: application/models/Auth.php:36
 #, php-format
 msgid "%s Password Reset"
 msgstr "%s jelszó visszaállítása"
 
-#: application/models/Block.php:832 application/models/Playlist.php:800
+#: application/models/Block.php:833 application/models/Playlist.php:802
 #, fuzzy
 msgid "Cue in and cue out are null."
 msgstr "A fel- és a lekeverés értékei nullák."
 
-#: application/models/Block.php:866 application/models/Block.php:921
-#: application/models/Playlist.php:838 application/models/Playlist.php:879
+#: application/models/Block.php:867 application/models/Block.php:922
+#: application/models/Playlist.php:840 application/models/Playlist.php:881
 #, fuzzy
 msgid "Can't set cue out to be greater than file length."
 msgstr "Nem lehet beállítani, mert a lekeverési idő nem lehet nagyobb a fájl hosszánál."
 
-#: application/models/Block.php:878 application/models/Block.php:898
-#: application/models/Playlist.php:830 application/models/Playlist.php:853
+#: application/models/Block.php:879 application/models/Block.php:899
+#: application/models/Playlist.php:832 application/models/Playlist.php:855
 #, fuzzy
 msgid "Can't set cue in to be larger than cue out."
 msgstr "Nem lehet beállítani, hogy a felkeverés hosszabb legyen, mint a lekeverés."
 
-#: application/models/Block.php:933 application/models/Playlist.php:871
+#: application/models/Block.php:934 application/models/Playlist.php:873
 #, fuzzy
 msgid "Can't set cue out to be smaller than cue in."
 msgstr "Nem lehet a lekeverés rövidebb, mint a felkeverés."
 
-#: application/models/Block.php:1440 application/models/Block.php:1536
+#: application/models/Block.php:1448 application/models/Block.php:1546
 msgid "Upload Time"
 msgstr "Feltöltési idő"
 
@@ -3993,12 +3934,12 @@ msgstr "Feltöltési idő"
 msgid "None"
 msgstr "Nincs"
 
-#: application/models/Preference.php:521
+#: application/models/Preference.php:536
 #, php-format
 msgid "Powered by %s"
 msgstr "Működteti a %s"
 
-#: application/models/Preference.php:651
+#: application/models/Preference.php:655
 msgid "Select Country"
 msgstr "Ország kiválasztása"
 
@@ -4018,8 +3959,8 @@ msgstr "A megtekintett ütemterv elavult! (ütem eltérés)"
 msgid "The schedule you're viewing is out of date! (instance mismatch)"
 msgstr "A megtekintett ütemterv elavult! (példány eltérés)"
 
-#: application/models/Scheduler.php:138 application/models/Scheduler.php:489
-#: application/models/Scheduler.php:527 application/models/Scheduler.php:566
+#: application/models/Scheduler.php:138 application/models/Scheduler.php:491
+#: application/models/Scheduler.php:529 application/models/Scheduler.php:568
 msgid "The schedule you're viewing is out of date!"
 msgstr "A megtekintett ütemterv időpontja elavult!"
 
@@ -4042,15 +3983,15 @@ msgstr "A műsor %s véget ért és nem lehet ütemezni."
 msgid "The show %s has been previously updated!"
 msgstr "%s műsor már korábban frissítve lett!"
 
-#: application/models/Scheduler.php:185
+#: application/models/Scheduler.php:187
 msgid "Content in linked shows cannot be changed while on air!"
 msgstr "A hivatkozott műsorok tartalma nem módosítható adás közben!"
 
-#: application/models/Scheduler.php:200
+#: application/models/Scheduler.php:202
 msgid "Cannot schedule a playlist that contains missing files."
 msgstr "Nem lehet ütemezni olyan lejátszási listát amely hiányzó fájlokat tartalmaz."
 
-#: application/models/Scheduler.php:226 application/models/Scheduler.php:318
+#: application/models/Scheduler.php:228 application/models/Scheduler.php:320
 msgid "A selected File does not exist!"
 msgstr "Egy kiválasztott fájl nem létezik!"
 
@@ -4066,53 +4007,53 @@ msgstr ""
 "Átfedő műsorokat nem lehet ütemezni.\n"
 "Megjegyzés: Egy ismétlődő műsor átméretezése hatással lesz minden ismétlésére."
 
-#: application/models/ShowBuilder.php:209
+#: application/models/ShowBuilder.php:212
 #, fuzzy, php-format
 msgid "Rebroadcast of %s from %s"
 msgstr "Úrjaközvetítés %s -tól/-től %s"
 
-#: application/models/Webstream.php:163
+#: application/models/Webstream.php:165
 msgid "Length needs to be greater than 0 minutes"
 msgstr "A hosszúság értékének nagyobb kell lennie, mint 0 perc"
 
-#: application/models/Webstream.php:167
+#: application/models/Webstream.php:169
 #, fuzzy
 msgid "Length should be of form \"00h 00m\""
 msgstr "A hosszúság formája \"00ó 00p\""
 
-#: application/models/Webstream.php:180
-msgid "URL should be of form \"http://domain\""
-msgstr "Az URL-t „http://domain” formában kell megadni"
+#: application/models/Webstream.php:182
+msgid "URL should be of form \"https://example.org\""
+msgstr "Az URL-t „https://example.org” formában kell megadni"
 
-#: application/models/Webstream.php:183
+#: application/models/Webstream.php:185
 msgid "URL should be 512 characters or less"
 msgstr "Az URL nem lehet 512 karakternél hosszabb"
 
-#: application/models/Webstream.php:188
+#: application/models/Webstream.php:190
 msgid "No MIME type found for webstream."
 msgstr "Nem található MIME típus a web-adásfolyamhoz."
 
-#: application/models/Webstream.php:204
+#: application/models/Webstream.php:206
 msgid "Webstream name cannot be empty"
 msgstr "A web-adásfolyam neve nem lehet üres"
 
-#: application/models/Webstream.php:274
+#: application/models/Webstream.php:276
 msgid "Could not parse XSPF playlist"
 msgstr "Nem sikerült feldolgozni az XSPF lejátszási listát"
 
-#: application/models/Webstream.php:295
+#: application/models/Webstream.php:297
 msgid "Could not parse PLS playlist"
 msgstr "Nem sikerült feldolgozni a PLS lejátszási listát"
 
-#: application/models/Webstream.php:314
+#: application/models/Webstream.php:316
 msgid "Could not parse M3U playlist"
 msgstr "Nem sikerült feldolgozni az M3U lejátszási listát"
 
-#: application/models/Webstream.php:327
+#: application/models/Webstream.php:329
 msgid "Invalid webstream - This appears to be a file download."
 msgstr "Érvénytelen web-adásfolyam - Úgy néz ki, hogy ez egy fájlletöltés."
 
-#: application/models/Webstream.php:331
+#: application/models/Webstream.php:333
 #, php-format
 msgid "Unrecognized stream type: %s"
 msgstr "Ismeretlen típusú adásfolyam: %s"
@@ -4121,66 +4062,66 @@ msgstr "Ismeretlen típusú adásfolyam: %s"
 msgid "Record file doesn't exist"
 msgstr "Rögzített fájl nem létezik"
 
-#: application/services/CalendarService.php:52
+#: application/services/CalendarService.php:53
 msgid "View Recorded File Metadata"
 msgstr "A rögzített fájl metaadatai"
 
-#: application/services/CalendarService.php:78
+#: application/services/CalendarService.php:81
 msgid "Schedule Tracks"
 msgstr "Sávok ütemezése"
 
-#: application/services/CalendarService.php:101
+#: application/services/CalendarService.php:106
 msgid "Clear Show"
 msgstr "Műsor törlése"
 
-#: application/services/CalendarService.php:115
-#: application/services/CalendarService.php:120
+#: application/services/CalendarService.php:121
+#: application/services/CalendarService.php:127
 msgid "Cancel Show"
 msgstr "Műsor megszakítása"
 
-#: application/services/CalendarService.php:141
-#: application/services/CalendarService.php:160
+#: application/services/CalendarService.php:149
+#: application/services/CalendarService.php:168
 msgid "Edit Instance"
 msgstr "Példány szerkesztése:"
 
-#: application/services/CalendarService.php:153
-#: application/services/CalendarService.php:167
+#: application/services/CalendarService.php:161
+#: application/services/CalendarService.php:175
 msgid "Edit Show"
 msgstr "Műsor szerkesztése"
 
-#: application/services/CalendarService.php:189
+#: application/services/CalendarService.php:199
 msgid "Delete Instance"
 msgstr "Példány törlése:"
 
-#: application/services/CalendarService.php:195
+#: application/services/CalendarService.php:206
 msgid "Delete Instance and All Following"
 msgstr "Ennek a példánynak és minden utána következő példánynak a törlése"
 
-#: application/services/CalendarService.php:250
+#: application/services/CalendarService.php:264
 msgid "Permission denied"
 msgstr "Engedély megtagadva"
 
-#: application/services/CalendarService.php:254
+#: application/services/CalendarService.php:268
 msgid "Can't drag and drop repeating shows"
 msgstr "Ismétlődő műsorokat nem lehet megfogni és áthúzni"
 
-#: application/services/CalendarService.php:263
+#: application/services/CalendarService.php:277
 msgid "Can't move a past show"
 msgstr "Az elhangzott műsort nem lehet áthelyezni"
 
-#: application/services/CalendarService.php:298
+#: application/services/CalendarService.php:312
 msgid "Can't move show into past"
 msgstr "A műsort nem lehet a múltba áthelyezni"
 
-#: application/services/CalendarService.php:322
+#: application/services/CalendarService.php:336
 msgid "Can't move a recorded show less than 1 hour before its rebroadcasts."
 msgstr "Egy rögzített műsort nem lehet mozgatni, ha kevesebb mint egy óra van hátra az újraközvetítéséig."
 
-#: application/services/CalendarService.php:333
+#: application/services/CalendarService.php:347
 msgid "Show was deleted because recorded show does not exist!"
 msgstr "A műsor törlésre került, mert a rögzített műsor nem létezik!"
 
-#: application/services/CalendarService.php:340
+#: application/services/CalendarService.php:354
 msgid "Must wait 1 hour to rebroadcast."
 msgstr "Az adás újbóli közvetítésére 1 órát kell várni."
 
@@ -4262,11 +4203,23 @@ msgstr "Web-adásfolyamok"
 #~ msgid "(ss.t)"
 #~ msgstr "(mm.t)"
 
+#~ msgid "1 - Mono"
+#~ msgstr "1 - Monó"
+
+#~ msgid "2 - Stereo"
+#~ msgstr "2 - Sztereó"
+
 #~ msgid "A password reset link has been sent to your email address. Please check your email and follow the instructions inside to reset your password. If you don't see the email, please check your spam folder!"
 #~ msgstr "Egy jelszóvisszaállító hivatkozást küldtünk a megadott email címre. Az email tartalmazza a jelszó visszaállításához szükséges lépéseket. Ha nem érkezik meg az email, érdemes megnézni a levélszemét mappában."
 
 #~ msgid "A track list will be generated when you schedule this smart block into a show."
 #~ msgstr "Egy sávlista lesz létrehozva amikor ez az okosblokk ütemezésre kerül egy műsorban."
+
+#~ msgid "ALSA"
+#~ msgstr "ALSA"
+
+#~ msgid "AO"
+#~ msgstr "AO"
 
 #~ msgid "About"
 #~ msgstr "Rólunk"
@@ -4288,6 +4241,12 @@ msgstr "Web-adásfolyamok"
 
 #~ msgid "Additional Options"
 #~ msgstr "További lehetőségek"
+
+#~ msgid "Admin Password"
+#~ msgstr "Adminisztrátor jelszó"
+
+#~ msgid "Admin User"
+#~ msgstr "Adminisztrátor felhasználó"
 
 #~ msgid "Advanced Search Options"
 #~ msgstr "Speciális keresési beállítások"
@@ -4404,6 +4363,9 @@ msgstr "Web-adásfolyamok"
 #~ msgid "Cursor"
 #~ msgstr "Kurzor"
 
+#~ msgid "Custom / 3rd Party Streaming"
+#~ msgstr "Egyéni / Más féltől származó adásfolyam"
+
 #~ msgid ""
 #~ "Customize the player by configuring the options below. When you are done,\n"
 #~ "            copy the embeddable code below and paste it into your website's HTML."
@@ -4430,6 +4392,9 @@ msgstr "Web-adásfolyamok"
 
 #~ msgid "Default Sharing Type:"
 #~ msgstr "Alapértelmezett megosztástípus:"
+
+#~ msgid "Default Streaming"
+#~ msgstr "Alapértelmezett adásfolyam:"
 
 #~ msgid "Disk Space"
 #~ msgstr "Lemezterület"
@@ -4547,8 +4512,14 @@ msgstr "Web-adásfolyamok"
 #~ msgid "Here's how you can get started using %s to automate your broadcasts: "
 #~ msgstr "Így lehet elkezdeni a %s használatát a műsorsugárzás automatizálásához:"
 
+#~ msgid "Icecast Vorbis Metadata"
+#~ msgstr "Icecast Vorbis metaadat"
+
 #~ msgid "Isrc Number:"
 #~ msgstr "Isrc szám:"
+
+#~ msgid "Jack"
+#~ msgstr "Jack"
 
 #~ msgid "Keywords"
 #~ msgstr "Kulcsszavak"
@@ -4601,6 +4572,9 @@ msgstr "Web-adásfolyamok"
 #~ msgid "Monthly Listener Bandwidth Usage"
 #~ msgstr "Havi hallgatók sávszélesség használata"
 
+#~ msgid "Mount cannot be empty with Icecast server."
+#~ msgstr "A csatolási pont nem lehet üres Icecast szerver esetében."
+
 #~ msgid "New Criteria"
 #~ msgstr "Új feltétel"
 
@@ -4645,6 +4619,12 @@ msgstr "Web-adásfolyamok"
 
 #~ msgid "ON AIR"
 #~ msgstr "ADÁSBAN"
+
+#~ msgid "OSS"
+#~ msgstr "OSS"
+
+#~ msgid "Only numbers are allowed."
+#~ msgstr "Csak számok adhatók meg."
 
 #~ msgid "Oops!"
 #~ msgstr "Hoppá!"
@@ -4701,6 +4681,12 @@ msgstr "Web-adásfolyamok"
 #~ msgid "Podcasts"
 #~ msgstr "Podcastok"
 
+#~ msgid "Port cannot be empty."
+#~ msgstr "A port nem lehet üres."
+
+#~ msgid "Portaudio"
+#~ msgstr "Portaudio"
+
 #~ msgid "Previous:"
 #~ msgstr "Előző:"
 
@@ -4724,6 +4710,9 @@ msgstr "Web-adásfolyamok"
 
 #~ msgid "Publishing"
 #~ msgstr "Közzététel"
+
+#~ msgid "Pulseaudio"
+#~ msgstr "Pulseaudio"
 
 #~ msgid "RESET"
 #~ msgstr "VISSZAÁLLÍTÁS"
@@ -4779,6 +4768,9 @@ msgstr "Web-adásfolyamok"
 
 #~ msgid "Select stream:"
 #~ msgstr "Adásfolyam kiválasztása:"
+
+#~ msgid "Server cannot be empty."
+#~ msgstr "A kiszolgáló nem lehet üres."
 
 #~ msgid "Service"
 #~ msgstr "Szolgáltatás"
@@ -4847,6 +4839,9 @@ msgstr "Web-adásfolyamok"
 
 #~ msgid "Stream URL: "
 #~ msgstr "Adásfolyam URL:"
+
+#~ msgid "Streaming Server:"
+#~ msgstr "Adásfolyam szerver:"
 
 #~ msgid "Style"
 #~ msgstr "Stílus"

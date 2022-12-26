@@ -1,28 +1,31 @@
-import pytest
-
-from ...models import StreamSetting
+from libretime_api.core.models.preference import Preference
 
 
 # pylint: disable=invalid-name,unused-argument
-@pytest.mark.parametrize(
-    "type_name, value",
-    [
-        ("boolean", True),
-        ("integer", 1),
-        ("string", "hello"),
-    ],
-)
-def test_stream_setting_value(db, type_name, value):
-    setting = StreamSetting.objects.create(
-        key=f"some_{type_name}",
-        type=type_name,
-        raw_value=str(value),
-    )
-    assert isinstance(setting.value, type(value))
+def test_preference_get_site_preferences(db):
+    result = Preference.get_site_preferences()
+    assert result.dict() == {
+        "station_name": "LibreTime",
+    }
 
-    empty_setting = StreamSetting.objects.create(
-        key=f"some_empty_{type_name}",
-        type=type_name,
-        raw_value="",
-    )
-    assert empty_setting.value is None
+
+# pylint: disable=invalid-name,unused-argument
+def test_preference_get_stream_preferences(db):
+    result = Preference.get_stream_preferences()
+    assert result.dict() == {
+        "input_fade_transition": 0.0,
+        "message_format": 0,
+        "message_offline": "LibreTime - offline",
+    }
+
+
+# pylint: disable=invalid-name,unused-argument
+def test_preference_get_stream_state(db):
+    result = Preference.get_stream_state()
+    assert result.dict() == {
+        "input_main_connected": False,
+        "input_main_streaming": False,
+        "input_show_connected": False,
+        "input_show_streaming": False,
+        "schedule_streaming": True,
+    }

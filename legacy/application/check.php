@@ -45,6 +45,11 @@ function checkDatabaseDependencies()
         && in_array('pgsql', $extensions);
 }
 
+function with_systemd()
+{
+    return !empty(shell_exec('which systemctl'));
+}
+
 /**
  * Check that all external services are configured correctly and return an associative
  * array with the results.
@@ -53,15 +58,20 @@ function checkDatabaseDependencies()
  */
 function checkExternalServices()
 {
-    return [
+    $result = [
         'database' => checkDatabaseConfiguration(),
-        'analyzer' => checkAnalyzerService(),
-        'pypo' => checkPlayoutService(),
-        'liquidsoap' => checkLiquidsoapService(),
         'rabbitmq' => checkRMQConnection(),
-        'celery' => checkCeleryService(),
-        'api' => checkApiService(),
     ];
+
+    if (with_systemd()) {
+        $result['analyzer'] = checkAnalyzerService();
+        $result['pypo'] = checkPlayoutService();
+        $result['liquidsoap'] = checkLiquidsoapService();
+        $result['celery'] = checkCeleryService();
+        $result['api'] = checkApiService();
+    }
+
+    return $result;
 }
 
 /**
@@ -78,7 +88,9 @@ function checkDatabaseConfiguration()
         // wrong, the database is improperly configured
         Propel::getConnection();
         Propel::close();
-    } catch (Exception $e) {
+    } catch (Exception $exc) {
+        Logging::error($exc->getMessage());
+
         return false;
     }
 
@@ -102,15 +114,21 @@ function checkRMQConnection()
 {
     $config = Config::getConfig();
 
-    $conn = new \PhpAmqpLib\Connection\AMQPStreamConnection(
-        $config['rabbitmq']['host'],
-        $config['rabbitmq']['port'],
-        $config['rabbitmq']['user'],
-        $config['rabbitmq']['password'],
-        $config['rabbitmq']['vhost']
-    );
+    try {
+        $conn = new \PhpAmqpLib\Connection\AMQPStreamConnection(
+            $config['rabbitmq']['host'],
+            $config['rabbitmq']['port'],
+            $config['rabbitmq']['user'],
+            $config['rabbitmq']['password'],
+            $config['rabbitmq']['vhost']
+        );
 
-    return isset($conn);
+        return isset($conn);
+    } catch (\PhpAmqpLib\Exception\AMQPRuntimeException $exc) {
+        Logging::error($exc->getMessage());
+
+        return false;
+    }
 }
 
 /**

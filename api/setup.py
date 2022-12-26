@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="libretime-api",
-    version="2.0.0a1",
+    version="3.0.1",
     description="LibreTime API",
     author="LibreTime Contributors",
     url="https://github.com/libretime/libretime",
@@ -17,17 +17,17 @@ setup(
         "libretime_api": ["legacy/migrations/sql/*.sql"],
     },
     include_package_data=True,
-    python_requires=">=3.6",
+    python_requires=">=3.8",
     entry_points={
         "console_scripts": [
             "libretime-api=libretime_api.manage:main",
         ]
     },
     install_requires=[
-        "django-filter>=2.4.0,<22.0",
-        "django>=3.2.12,<4.0",
-        "djangorestframework>=3.12.1,<3.14",
-        "drf-spectacular>=0.22.1,<0.23",
+        "django-filter>=2.4.0,<22.2",
+        "django>=4.1.4,<4.2",
+        "djangorestframework>=3.12.1,<3.15",
+        "drf-spectacular>=0.22.1,<0.26",
         "requests>=2.25.1,<2.29",
     ],
     extras_require={
@@ -35,6 +35,7 @@ setup(
             "psycopg2>=2.8.6,<2.10",
         ],
         "dev": [
+            "django-coverage-plugin",
             "django-stubs",
             "djangorestframework-stubs",
             "model_bakery",
